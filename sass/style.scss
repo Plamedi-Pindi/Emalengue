@@ -1,0 +1,227 @@
+/***** FILE IMPOTINHG *****/
+@import './header';
+@import './footer';
+@import './fonts';
+@import './main';
+
+/****** GENERAL SITTINGS START *******/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $roboto;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/****** GENERAL SITTINGS END *******/
+
+/******** MEDIA QUIRY *********/
+@media(min-width:600px) {
+    .footer-body {
+
+        .ftr-calling-bt {
+            display: flex;
+            flex-direction: row;
+            background-color: #111;
+        }
+
+        .ftr-content {
+            display: flex;
+            flex-direction: row;
+            align-items: start;
+        }
+
+    }
+}
+
+@media(min-width:720px) {
+    .menu-curso-container {
+        width: 300px !important;
+    }
+}
+
+@media(min-width:920px) {
+    .footer-body {
+        .ftr-calling-btn{
+            justify-content: space-between;
+            width: 86%;
+            margin: 0 auto;
+            border-bottom: 1px solid #888;
+
+            flex-direction: row !important;
+        }
+
+        .ftr-content {
+            width: 70%;
+        }
+
+        ul li{
+            font-size: 15px;
+            font-weight: 100;
+        }
+
+        h3{
+            font-family: 16px;
+            font-weight: 400;
+        }
+    }
+}
+
+@media(min-width: 992px) {
+
+    .navbar-content {
+        width: 90%;
+        font-size: 16px;
+
+        .search-bar {
+            width: 34%;
+        }
+
+        .menu-items {
+            width: 66%;
+
+            li {
+                margin-right: 20px;
+            }
+
+            li:hover {
+                color: rgb(3, 3, 83);
+                font-weight: bold;
+                transition: .5s;
+            }
+        }
+    }
+
+    .menu-cursos {
+        position: relative;
+
+        .menu-curso-container {
+            position: absolute;
+            margin-left: 0;
+            top: 45px;
+            background-color: white;
+            z-index: 100;
+            box-shadow: 1px 2px 10px #111;
+
+        }
+    }
+
+    // Banner Start
+    .carousel_1 {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: start;
+
+
+        .crs_1_content {
+            width: 400px !important;
+            height: 300px !important;
+            background-color: white;
+            color: #111 !important;
+            margin-left: 4rem;
+        }
+    }
+    // Banner End
+
+    // Cursos Recomendados Start
+    #cursos-recomendados {
+        .c_r_init{
+            margin-bottom: 10px !important;
+        }
+        h2{
+            font-size: 25px;
+        }
+        .cursos-rec-container,
+        .c_r_init {
+            width: 86%;
+            margin: 0 auto;
+        }
+    }
+    // Cursos Recomendados End
+    
+    // Cursos Recomendados Start
+    #contratar_freelancers {
+        .c_f_init{
+            width: 86%;
+            margin: 0 auto;
+            margin-bottom: 10px;
+        }
+        .c_f_container{
+            width: 86%;
+        }
+    }
+    // Cursos Recomendados End
+
+    // Nossos Parceiros Start
+    #parceiros{
+        width: 100%;
+        .parceiros_container{
+            flex-direction: row;
+            justify-content: space-around;
+            width: 100%;
+            margin-top: 0;
+            // background-color: aqua;
+        }
+        img{
+            width: 200px;
+        }
+        .img_1{
+            margin-top: 0;
+            width: 90px;
+        }
+        .img_2{
+            margin-top: 0;
+            margin-left: -30px;
+        }
+        .img_3{
+            margin-top: 0;
+            margin-left: -80px;
+        }
+        .img_4{
+            margin-top: 0;
+            margin-left: -70px;
+            width: 190px;
+        }
+    
+        .img_5{
+            margin-top: 0;
+            width: 140px;
+        }
+        
+    }
+    // Nossos Parceiros End
+
+    // TESTEMUNHO START
+    #testemunhos{
+        .t_init{
+            width: 86%;
+            margin: 0 auto;
+            margin-bottom: 4rem;
+        }
+        .testemunhos_container{
+            flex-direction: row;
+            justify-content: space-between;
+            width: 86%;
+            margin: 0 auto;
+        }
+
+        .testemunhos_card{
+            margin-right: 10px;
+        }
+    }
+    // TESTEMUNHO END
+}
+
+
+@media(min-width:1030px) {
+    .footer-body {
+        .ftr-content {
+            width: 60%;
+        }
+    }
+}

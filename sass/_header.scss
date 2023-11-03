@@ -1,0 +1,80 @@
+
+
+.navbar-content{
+
+    .search-bar {
+        input{
+            outline: none !important;
+
+            
+        }
+        input::placeholder{
+            color: #ccc;
+        }
+    }
+  
+    .menu-items{
+        max-height: 400px;
+        display: flex;
+        justify-content: center ;
+
+        li{
+            margin-right: 40px;
+        }
+
+        li:hover{
+            color: rgb(3, 3, 83);
+            font-weight: bold;
+            transition: .5s;
+        }
+    }
+}
+
+.menu-cursos{
+    
+    .menu-curso-container{
+        position: relative;
+        margin-left: 3.8rem;
+        top: -1.5rem;
+
+        border-radius: 0px 10px 10px 10px;
+        box-shadow: 1px 2px 10px #ccc;
+
+        /***Dropdown cursos***/ 
+        max-height: 0;
+        overflow: hidden;
+        transition: 1s;
+
+        ul{
+            padding: 0;
+            margin: 12px;
+        }
+
+        ul li{
+            width: 100%;
+            list-style: none;
+            padding: 5px;
+            border-bottom: 1px solid #ddd;
+            outline: none !important;
+        }
+
+        ul li:last-child{
+            border-bottom: none;
+        }
+
+        ul li:hover{
+            color: rgb(3, 3, 83);
+            transform: translateX(8px);
+            border-radius: 30px;
+            transition: ease-in-out 0.4s;
+            
+        }
+    }
+
+    
+}
+/***** Ativa o dropdown menu cursos ******/ 
+.menu-cursos:hover > .menu-curso-container{
+    max-height: 280px;
+    transition: ease-in .5s;
+}
