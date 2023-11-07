@@ -420,7 +420,7 @@ main {
   cursor: pointer;
 }
 #cursos-recomendados .cursos-rec-container .cursos-erc-card .cursos-rec-content .c_r_rate {
-  margin-bottom: -5px;
+  margin-bottom: 5px;
   cursor: pointer;
 }
 #cursos-recomendados .cursos-rec-container .cursos-erc-card .cursos-rec-content .c_r_rate p {
@@ -442,8 +442,8 @@ main {
   margin-top: 5px;
   font-size: 16px;
   font-weight: 600;
-  margin-top: 1px;
-  margin-bottom: 2px;
+  margin-top: 5px;
+  margin-bottom: 8px;
   cursor: pointer;
 }
 #cursos-recomendados .cursos-rec-container .cursos-erc-card .cursos-rec-content .c_r_class1 {
