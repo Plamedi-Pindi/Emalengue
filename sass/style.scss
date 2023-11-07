@@ -47,7 +47,7 @@ body {
 
 @media(min-width:920px) {
     .footer-body {
-        .ftr-calling-btn{
+        .ftr-calling-btn {
             justify-content: space-between;
             width: 86%;
             margin: 0 auto;
@@ -60,12 +60,12 @@ body {
             width: 70%;
         }
 
-        ul li{
+        ul li {
             font-size: 15px;
             font-weight: 100;
         }
 
-        h3{
+        h3 {
             font-family: 16px;
             font-weight: 400;
         }
@@ -73,6 +73,49 @@ body {
 }
 
 @media(min-width: 992px) {
+
+    nav{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-add{
+        // background-color: rosybrown !important;
+        width: 100%;
+        height: 35px;
+        border-bottom: 1px solid #ddd;
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        align-items: center;
+        margin-bottom: 5px;
+    }
+
+    .nav-cadastrar1{
+        // height: 20px;
+        text-decoration: none;
+        color: #ddd;
+        padding: 5px;
+        text-align: center;
+        width: 120px;
+        // margin-bottom: 10px;
+        border-radius: 4px;
+        background-color: #111;
+        font-size: 15px;
+        // float: right;
+        right: 5rem;
+        position: relative;
+    }
+    .nav-cadastrar1:hover{
+        border: #111 solid 1px;
+        background: transparent;
+        color: #111;
+        transition: ease .5s;
+    }
+
+    .nav-cadastrar{
+        display: none !important;
+    }
 
     .navbar-content {
         width: 90%;
@@ -123,97 +166,148 @@ body {
             height: 300px !important;
             background-color: white;
             color: #111 !important;
-            margin-left: 4rem;
+            margin-left: 8rem;
         }
     }
+    .carousel_2 {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: start;
+
+
+        .crs_2_content {
+            width: 450px !important;
+            height: 300px !important;
+            background-color: white;
+            color: #111 !important;
+            margin-left: 8rem;
+            transition: 0.4s;
+            padding: 5px;
+
+            h1{
+                // font-size: 30px;
+            }
+        }
+    }
+
     // Banner End
 
     // Cursos Recomendados Start
     #cursos-recomendados {
-        .c_r_init{
+
+        .swiper{
+            width: 85%;
+            // background-color: #ddd;
+        }
+        .cursos-recomendados-swiper {
+            margin: 0 auto;
+            // width: 80%;
+           
+        }
+
+        .c_r_init {
             margin-bottom: 10px !important;
         }
-        h2{
+
+        h2 {
             font-size: 25px;
         }
+
+        // .cursos-rec-container{
+        //     background-color: red;
+        //     margin: 0;
+        // }
         .cursos-rec-container,
         .c_r_init {
             width: 86%;
             margin: 0 auto;
+            // background-color: aqua;
         }
     }
+
     // Cursos Recomendados End
-    
-    // Cursos Recomendados Start
+
+    // Contratar Freelancer Start
     #contratar_freelancers {
-        .c_f_init{
+        .c_f_init {
             width: 86%;
             margin: 0 auto;
             margin-bottom: 10px;
         }
-        .c_f_container{
+
+        .c_f_container {
             width: 86%;
         }
     }
-    // Cursos Recomendados End
+
+    // Contratar Freelancer End
 
     // Nossos Parceiros Start
-    #parceiros{
+    #parceiros {
         width: 100%;
-        .parceiros_container{
+
+        .parceiros_container {
             flex-direction: row;
             justify-content: space-around;
             width: 100%;
             margin-top: 0;
             // background-color: aqua;
         }
-        img{
+
+        img {
             width: 200px;
         }
-        .img_1{
+
+        .img_1 {
             margin-top: 0;
             width: 90px;
         }
-        .img_2{
+
+        .img_2 {
             margin-top: 0;
             margin-left: -30px;
         }
-        .img_3{
+
+        .img_3 {
             margin-top: 0;
             margin-left: -80px;
         }
-        .img_4{
+
+        .img_4 {
             margin-top: 0;
             margin-left: -70px;
             width: 190px;
         }
-    
-        .img_5{
+
+        .img_5 {
             margin-top: 0;
             width: 140px;
         }
-        
+
     }
+
     // Nossos Parceiros End
 
     // TESTEMUNHO START
-    #testemunhos{
-        .t_init{
+    #testemunhos {
+        .t_init {
             width: 86%;
             margin: 0 auto;
             margin-bottom: 4rem;
         }
-        .testemunhos_container{
+
+        .testemunhos_container {
             flex-direction: row;
             justify-content: space-between;
             width: 86%;
             margin: 0 auto;
         }
 
-        .testemunhos_card{
+        .testemunhos_card {
             margin-right: 10px;
         }
     }
+
     // TESTEMUNHO END
 }
 

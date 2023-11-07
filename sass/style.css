@@ -1,4 +1,12 @@
 /***** FILE IMPOTINHG *****/
+nav {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+}
+
 .navbar-content .search-bar input {
   outline: none !important;
 }
@@ -7,6 +15,23 @@
 }
 .navbar-content .search-bar input::placeholder {
   color: #ccc;
+}
+.navbar-content .nav-cadastrar {
+  text-decoration: none;
+  color: #111;
+  padding: 8px;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  border: 1px solid #111;
+}
+.navbar-content .nav-cadastrar:hover {
+  background-color: #111;
+  color: #ddd;
+  transition: ease 0.5s;
 }
 .navbar-content .menu-items {
   max-height: 400px;
@@ -168,6 +193,7 @@ main {
 /****** BANNER START ********/
 #banner {
   height: 400px;
+  margin-top: 5rem;
 }
 #banner .carousel {
   height: 100%;
@@ -257,6 +283,75 @@ main {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/3.jpg);
   background-position: top;
 }
+#banner .carousel .carousel-inner .carousel_2 .crs_2_content {
+  height: inherit;
+  width: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: whitesmoke;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+#banner .carousel .carousel-inner .carousel_2 .crs_2_content h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+#banner .carousel .carousel-inner .carousel_2 .crs_2_content p {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+#banner .carousel .carousel-inner .carousel_2 .crs_2_content .bnnr-buttons {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+#banner .carousel .carousel-inner .carousel_2 .crs_2_content .bnnr-saberMais {
+  text-decoration: none;
+  color: whitesmoke;
+  padding: 9px;
+  background: #111;
+  width: 130px;
+  text-align: center;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  font-size: 17px;
+  font-weight: 600;
+  margin-right: 10px;
+}
+#banner .carousel .carousel-inner .carousel_2 .crs_2_content .bnnr-saberMais:hover {
+  transform: scale(1.05);
+  transition: ease-in-out 0.5s;
+  border: 1px solid #111;
+  background: transparent;
+  color: #111;
+  padding: 8px;
+}
+#banner .carousel .carousel-inner .carousel_2 .crs_2_content .calling-Button {
+  border-radius: 5px;
+  padding: 6px;
+  background: linear-gradient(45deg, rgb(207, 136, 3), rgb(252, 179, 43), rgb(214, 140, 2));
+  width: 130px;
+  margin-bottom: 20px;
+  color: #111;
+  font-size: 17px;
+  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  text-decoration: none;
+  animation: callingButton;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+#banner .carousel .carousel-inner .carousel_2 .crs_2_content .calling-Button:hover {
+  transform: scale(1.06);
+  background: linear-gradient(45deg, rgb(153, 103, 9), rgb(240, 167, 33), rgb(172, 114, 6));
+  transition: ease-in-out 0.4s;
+}
 #banner .carousel .carousel-inner .carousel_1,
 #banner .carousel .carousel-inner .carousel_2 {
   background-repeat: no-repeat;
@@ -282,21 +377,23 @@ main {
   font-size: 16px;
   color: #888;
 }
-#cursos-recomendados .cursos-rec-container::-webkit-scrollbar {
-  width: 0;
+#cursos-recomendados .cursos-recomendados-swiper {
+  width: 85%;
+  overflow: hidden;
+  margin: 0 auto;
 }
 #cursos-recomendados .cursos-rec-container {
   padding: 10px;
   display: flex;
-  overflow-x: auto;
+  align-items: center;
+  width: 100%;
+  height: 340px;
 }
 #cursos-recomendados .cursos-rec-container .cursos-erc-card {
-  height: 260px;
-  min-width: 210px;
-  width: 210px;
   display: flex;
   flex-direction: column;
   margin-right: 10px;
+  margin-left: 4px;
   margin-bottom: 1rem;
 }
 #cursos-recomendados .cursos-rec-container .cursos-erc-card img {
@@ -631,6 +728,41 @@ body {
   }
 }
 @media (min-width: 992px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+  }
+  .nav-add {
+    width: 100%;
+    height: 35px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+  .nav-cadastrar1 {
+    text-decoration: none;
+    color: #ddd;
+    padding: 5px;
+    text-align: center;
+    width: 120px;
+    border-radius: 4px;
+    background-color: #111;
+    font-size: 15px;
+    right: 5rem;
+    position: relative;
+  }
+  .nav-cadastrar1:hover {
+    border: #111 solid 1px;
+    background: transparent;
+    color: #111;
+    transition: ease 0.5s;
+  }
+  .nav-cadastrar {
+    display: none !important;
+  }
   .navbar-content {
     width: 90%;
     font-size: 16px;
@@ -670,7 +802,27 @@ body {
     height: 300px !important;
     background-color: white;
     color: #111 !important;
-    margin-left: 4rem;
+    margin-left: 8rem;
+  }
+  .carousel_2 {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: start;
+  }
+  .carousel_2 .crs_2_content {
+    width: 450px !important;
+    height: 300px !important;
+    background-color: white;
+    color: #111 !important;
+    margin-left: 8rem;
+    transition: 0.4s;
+    padding: 5px;
+  }
+  #cursos-recomendados .swiper {
+    width: 85%;
+  }
+  #cursos-recomendados .cursos-recomendados-swiper {
+    margin: 0 auto;
   }
   #cursos-recomendados .c_r_init {
     margin-bottom: 10px !important;

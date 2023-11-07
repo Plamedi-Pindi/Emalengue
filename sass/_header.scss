@@ -1,4 +1,13 @@
 
+nav{
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+
+}
+
 
 .navbar-content{
 
@@ -13,6 +22,25 @@
         }
     }
   
+    .nav-cadastrar{
+        text-decoration: none;
+        color: #111;
+        padding: 8px;
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+        width: 200px;
+        margin-bottom: 10px;
+        border-radius: 4px;
+        border: 1px solid #111;
+    }
+
+    .nav-cadastrar:hover{
+        background-color: #111;
+        color: #ddd;
+        transition: ease .5s;
+    }
+
     .menu-items{
         max-height: 400px;
         display: flex;
