@@ -24,6 +24,19 @@ nav{
             color: #ccc;
         }
     }
+    .midia{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+        a{
+            text-decoration: none;
+            color: #111;
+        }
+        i{
+            font-size: 25px;
+            margin-left: 10px;
+        }
+    }
     .login-reg{
         display: flex;
         align-items: center;

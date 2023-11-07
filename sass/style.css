@@ -20,6 +20,19 @@ nav {
 .navbar-content .search-bar input::placeholder {
   color: #ccc;
 }
+.navbar-content .midia {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.navbar-content .midia a {
+  text-decoration: none;
+  color: #111;
+}
+.navbar-content .midia i {
+  font-size: 25px;
+  margin-left: 10px;
+}
 .navbar-content .login-reg {
   display: flex;
   align-items: center;
@@ -765,6 +778,21 @@ body {
     align-items: center;
     margin-bottom: 5px;
   }
+  .midia1 {
+    width: 100px;
+    position: relative;
+    right: 5.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .midia1 a {
+    color: #111;
+    text-decoration: none;
+  }
+  .midia1 i {
+    font-size: 23px;
+  }
   .nav-login1 {
     text-decoration: none;
     color: #111;
@@ -808,7 +836,8 @@ body {
     transition: ease 0.5s;
   }
   .nav-cadastrar,
-  .nav-login {
+  .nav-login,
+  .midia {
     display: none !important;
   }
   .navbar-content {

@@ -91,6 +91,22 @@ body {
         margin-bottom: 5px;
     }
 
+    .midia1{
+        // background-color: #888;
+        width: 100px;
+        position: relative;
+        right: 5.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        a{
+            color: #111;
+            text-decoration: none;
+        }
+        i{
+            font-size: 23px;
+        }
+    }
     .nav-login1{
         text-decoration: none;
         color: #111;
@@ -103,7 +119,7 @@ body {
         font-size: 15px;
         right: 5rem;
         position: relative;
-
+       
         i{
             margin-right: 10px;
             font-size: 16px;
@@ -137,7 +153,8 @@ body {
     }
 
     .nav-cadastrar,
-    .nav-login{
+    .nav-login,
+    .midia{
         display: none !important;
     }
 
