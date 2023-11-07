@@ -7,6 +7,10 @@ nav {
   width: 100%;
 }
 
+.nav-add {
+  display: none;
+}
+
 .navbar-content .search-bar input {
   outline: none !important;
 }
