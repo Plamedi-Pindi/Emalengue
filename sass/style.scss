@@ -73,7 +73,7 @@ body {
 }
 
 @media(min-width: 992px) {
-
+   
     nav{
         display: flex;
         flex-direction: column;
@@ -91,18 +91,41 @@ body {
         margin-bottom: 5px;
     }
 
+    .nav-login{
+        text-decoration: none;
+        color: #111;
+        padding: 4px;
+        margin-right: 10px;
+        text-align: center;
+        width: 100px;
+        border: solid 1px #888;
+        border-radius: 2px;
+        font-size: 15px;
+        right: 5rem;
+        position: relative;
+
+        i{
+            margin-right: 10px;
+            font-size: 16px;
+        }
+    }
+    .nav-login:hover{
+        background-color: #111;
+        border: none;
+        padding: 5px;
+        color: #ddd;
+        transition: ease .5s;
+    }
+
     .nav-cadastrar1{
-        // height: 20px;
         text-decoration: none;
         color: #ddd;
         padding: 5px;
         text-align: center;
-        width: 120px;
-        // margin-bottom: 10px;
-        border-radius: 4px;
+        width: 110px;
+        border-radius: 2px;
         background-color: #111;
         font-size: 15px;
-        // float: right;
         right: 5rem;
         position: relative;
     }
@@ -196,7 +219,12 @@ body {
 
     // Cursos Recomendados Start
     #cursos-recomendados {
-
+        h2{
+            text-align: start;
+            width: 86%;
+            margin: 0 auto;
+            font-size: 25px;
+        }
         .swiper{
             width: 85%;
             // background-color: #ddd;
@@ -231,6 +259,12 @@ body {
 
     // Contratar Freelancer Start
     #contratar_freelancers {
+        h2{
+            text-align: start;
+            width: 86%;
+            margin: 0 auto;
+            font-size: 25px;
+        }
         .c_f_init {
             width: 86%;
             margin: 0 auto;
@@ -248,6 +282,12 @@ body {
     #parceiros {
         width: 100%;
 
+        h2{
+            text-align: start;
+            width: 86%;
+            margin: 0 auto;
+            font-size: 25px;
+        }
         .parceiros_container {
             flex-direction: row;
             justify-content: space-around;
@@ -292,6 +332,12 @@ body {
 
     // TESTEMUNHO START
     #testemunhos {
+        h2{
+            text-align: start;
+            width: 86%;
+            margin: 0 auto;
+            font-size: 25px;
+        }
         .t_init {
             width: 86%;
             margin: 0 auto;

@@ -20,19 +20,37 @@ nav {
 .navbar-content .search-bar input::placeholder {
   color: #ccc;
 }
+.navbar-content .login-reg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbar-content .nav-login {
+  text-decoration: none;
+  color: #111;
+  padding: 8px;
+  margin-right: 10px;
+  text-align: center;
+  width: 150px;
+  margin-bottom: 10px;
+  border-radius: 2px;
+  border: 1px solid #111;
+}
+.navbar-content .nav-login i {
+  margin-right: 10px;
+}
 .navbar-content .nav-cadastrar {
   text-decoration: none;
   color: #111;
   padding: 8px;
   text-align: center;
-  display: block;
-  margin: 0 auto;
-  width: 200px;
+  width: 150px;
   margin-bottom: 10px;
-  border-radius: 4px;
+  border-radius: 2px;
   border: 1px solid #111;
 }
-.navbar-content .nav-cadastrar:hover {
+.navbar-content .nav-cadastrar:hover,
+.navbar-content .nav-login:hover {
   background-color: #111;
   color: #ddd;
   transition: ease 0.5s;
@@ -118,7 +136,7 @@ footer .footer-body .ftr-calling-btn {
   margin-top: 15px;
 }
 footer .footer-body .ftr-calling-btn .callingButton {
-  border-radius: 8px;
+  border-radius: 2px;
   padding: 7px;
   background: linear-gradient(45deg, rgb(207, 136, 3), rgb(252, 179, 43), rgb(214, 140, 2));
   width: 150px;
@@ -245,7 +263,7 @@ main {
   background: #111;
   width: 130px;
   text-align: center;
-  border-radius: 5px;
+  border-radius: 2px;
   margin-bottom: 1rem;
   font-size: 17px;
   font-weight: 600;
@@ -260,7 +278,7 @@ main {
   padding: 8px;
 }
 #banner .carousel .carousel-inner .carousel_1 .crs_1_content .calling-Button {
-  border-radius: 5px;
+  border-radius: 2px;
   padding: 6px;
   background: linear-gradient(45deg, rgb(207, 136, 3), rgb(252, 179, 43), rgb(214, 140, 2));
   width: 130px;
@@ -319,7 +337,7 @@ main {
   background: #111;
   width: 130px;
   text-align: center;
-  border-radius: 5px;
+  border-radius: 2px;
   margin-bottom: 1rem;
   font-size: 17px;
   font-weight: 600;
@@ -334,7 +352,7 @@ main {
   padding: 8px;
 }
 #banner .carousel .carousel-inner .carousel_2 .crs_2_content .calling-Button {
-  border-radius: 5px;
+  border-radius: 2px;
   padding: 6px;
   background: linear-gradient(45deg, rgb(207, 136, 3), rgb(252, 179, 43), rgb(214, 140, 2));
   width: 130px;
@@ -546,9 +564,9 @@ main {
   text-decoration: none;
   padding: 6px;
   color: #ddd;
-  font-size: 14px;
+  font-size: 13px;
   background: linear-gradient(45deg, rgb(3, 3, 153), rgb(4, 78, 236), rgb(2, 2, 128));
-  border-radius: 5px;
+  border-radius: 2px;
 }
 #contratar_freelancers .c_f_container .c_f_card .c_f_skill {
   background-color: rgb(2, 2, 73);
@@ -611,7 +629,7 @@ main {
 }
 
 /***********NOSSOS PARCEIROS END *****************/
-/***********tESTEMUNHOS START *****************/
+/*********** TESTEMUNHOS START *****************/
 #testemunhos {
   width: 100%;
   padding-bottom: 2rem;
@@ -667,14 +685,15 @@ main {
   font-weight: 600;
 }
 #testemunhos .testemunhos_container .testemunhos_card .t_content p {
-  font-size: 15px;
+  font-size: 14px;
   color: #888;
   margin: 0;
 }
 #testemunhos .testemunhos_container .testemunhos_card .t_content div {
-  font-size: 15px;
+  font-size: 14px;
   padding: 8px;
   margin-top: -2px;
+  color: #777;
 }
 
 /***********tESTEMUNHOS END *****************/
@@ -746,13 +765,37 @@ body {
     align-items: center;
     margin-bottom: 5px;
   }
+  .nav-login {
+    text-decoration: none;
+    color: #111;
+    padding: 4px;
+    margin-right: 10px;
+    text-align: center;
+    width: 100px;
+    border: solid 1px #888;
+    border-radius: 2px;
+    font-size: 15px;
+    right: 5rem;
+    position: relative;
+  }
+  .nav-login i {
+    margin-right: 10px;
+    font-size: 16px;
+  }
+  .nav-login:hover {
+    background-color: #111;
+    border: none;
+    padding: 5px;
+    color: #ddd;
+    transition: ease 0.5s;
+  }
   .nav-cadastrar1 {
     text-decoration: none;
     color: #ddd;
     padding: 5px;
     text-align: center;
-    width: 120px;
-    border-radius: 4px;
+    width: 110px;
+    border-radius: 2px;
     background-color: #111;
     font-size: 15px;
     right: 5rem;
@@ -825,6 +868,12 @@ body {
     transition: 0.4s;
     padding: 5px;
   }
+  #cursos-recomendados h2 {
+    text-align: start;
+    width: 86%;
+    margin: 0 auto;
+    font-size: 25px;
+  }
   #cursos-recomendados .swiper {
     width: 85%;
   }
@@ -842,6 +891,12 @@ body {
     width: 86%;
     margin: 0 auto;
   }
+  #contratar_freelancers h2 {
+    text-align: start;
+    width: 86%;
+    margin: 0 auto;
+    font-size: 25px;
+  }
   #contratar_freelancers .c_f_init {
     width: 86%;
     margin: 0 auto;
@@ -852,6 +907,12 @@ body {
   }
   #parceiros {
     width: 100%;
+  }
+  #parceiros h2 {
+    text-align: start;
+    width: 86%;
+    margin: 0 auto;
+    font-size: 25px;
   }
   #parceiros .parceiros_container {
     flex-direction: row;
@@ -882,6 +943,12 @@ body {
   #parceiros .img_5 {
     margin-top: 0;
     width: 140px;
+  }
+  #testemunhos h2 {
+    text-align: start;
+    width: 86%;
+    margin: 0 auto;
+    font-size: 25px;
   }
   #testemunhos .t_init {
     width: 86%;

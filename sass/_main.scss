@@ -89,7 +89,7 @@ main {
                         background: #111;
                         width: 130px;
                         text-align: center;
-                        border-radius: 5px;
+                        border-radius: 2px;
                         margin-bottom: 1rem;
                         font-size: 17px;
                         font-weight: 600;
@@ -107,7 +107,7 @@ main {
 
 
                     .calling-Button {
-                        border-radius: 5px;
+                        border-radius: 2px;
                         padding: 6px;
                         background: linear-gradient(45deg, rgb(207, 136, 3), rgb(252, 179, 43), rgb(214, 140, 2));
                         width: 130px;
@@ -183,7 +183,7 @@ main {
                         background: #111;
                         width: 130px;
                         text-align: center;
-                        border-radius: 5px;
+                        border-radius: 2px;
                         margin-bottom: 1rem;
                         font-size: 17px;
                         font-weight: 600;
@@ -201,7 +201,7 @@ main {
 
 
                     .calling-Button {
-                        border-radius: 5px;
+                        border-radius: 2px;
                         padding: 6px;
                         background: linear-gradient(45deg, rgb(207, 136, 3), rgb(252, 179, 43), rgb(214, 140, 2));
                         width: 130px;
@@ -455,9 +455,10 @@ main {
                     text-decoration: none;
                     padding: 6px;
                     color: #ddd;
-                    font-size: 14px;
+                    font-size: 13px;
                     background: linear-gradient(45deg, rgb(3, 3, 153), rgb(4, 78, 236), rgb(2, 2, 128));
-                    border-radius: 5px;
+                    // background: rgb(1, 75, 233);
+                    border-radius: 2px;
                 }
 
             }
@@ -537,7 +538,7 @@ main {
 
 /***********NOSSOS PARCEIROS END *****************/
 
-/***********tESTEMUNHOS START *****************/
+/*********** TESTEMUNHOS START *****************/
 #testemunhos {
     width: 100%;
     padding-bottom: 2rem;
@@ -594,15 +595,16 @@ main {
                 }
 
                 p {
-                    font-size: 15px;
+                    font-size: 14px;
                     color: #888;
                     margin: 0;
                 }
 
                 div {
-                    font-size: 15px;
+                    font-size: 14px;
                     padding: 8px;
                     margin-top: -2px;
+                    color: #777;
                 }
             }
         }
