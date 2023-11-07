@@ -155,6 +155,9 @@ body {
     }
 
     // Banner Start
+    #banner {
+        margin-top: 5rem;
+    }
     .carousel_1 {
         display: flex !important;
         align-items: center !important;
@@ -184,9 +187,8 @@ body {
             transition: 0.4s;
             padding: 5px;
 
-            h1{
-                // font-size: 30px;
-            }
+            
+            
         }
     }
 
