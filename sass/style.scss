@@ -91,7 +91,7 @@ body {
         margin-bottom: 5px;
     }
 
-    .nav-login{
+    .nav-login1{
         text-decoration: none;
         color: #111;
         padding: 4px;
@@ -136,7 +136,8 @@ body {
         transition: ease .5s;
     }
 
-    .nav-cadastrar{
+    .nav-cadastrar,
+    .nav-login{
         display: none !important;
     }
 
@@ -181,6 +182,7 @@ body {
     #banner {
         margin-top: 5rem;
     }
+   
     .carousel_1 {
         display: flex !important;
         align-items: center !important;
@@ -193,6 +195,10 @@ body {
             background-color: white;
             color: #111 !important;
             margin-left: 8rem;
+
+            .bnnr-saberMais:hover {
+                color: #111 !important;
+            }
         }
     }
     .carousel_2 {
@@ -210,7 +216,9 @@ body {
             transition: 0.4s;
             padding: 5px;
 
-            
+            .bnnr-saberMais:hover {
+                color: #111 !important;
+            }
             
         }
     }

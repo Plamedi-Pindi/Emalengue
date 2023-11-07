@@ -274,7 +274,7 @@ main {
   transition: ease-in-out 0.5s;
   border: 1px solid #111;
   background: transparent;
-  color: #111;
+  color: #ddd;
   padding: 8px;
 }
 #banner .carousel .carousel-inner .carousel_1 .crs_1_content .calling-Button {
@@ -765,7 +765,7 @@ body {
     align-items: center;
     margin-bottom: 5px;
   }
-  .nav-login {
+  .nav-login1 {
     text-decoration: none;
     color: #111;
     padding: 4px;
@@ -778,7 +778,7 @@ body {
     right: 5rem;
     position: relative;
   }
-  .nav-login i {
+  .nav-login1 i {
     margin-right: 10px;
     font-size: 16px;
   }
@@ -807,7 +807,8 @@ body {
     color: #111;
     transition: ease 0.5s;
   }
-  .nav-cadastrar {
+  .nav-cadastrar,
+  .nav-login {
     display: none !important;
   }
   .navbar-content {
@@ -854,6 +855,9 @@ body {
     color: #111 !important;
     margin-left: 8rem;
   }
+  .carousel_1 .crs_1_content .bnnr-saberMais:hover {
+    color: #111 !important;
+  }
   .carousel_2 {
     display: flex !important;
     align-items: center !important;
@@ -867,6 +871,9 @@ body {
     margin-left: 8rem;
     transition: 0.4s;
     padding: 5px;
+  }
+  .carousel_2 .crs_2_content .bnnr-saberMais:hover {
+    color: #111 !important;
   }
   #cursos-recomendados h2 {
     text-align: start;
