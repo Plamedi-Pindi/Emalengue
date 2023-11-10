@@ -43,6 +43,10 @@ body {
     .menu-curso-container {
         width: 300px !important;
     }
+
+    .contratar_freelancers-swiper{
+        width: 85%;
+    }
 }
 
 @media(min-width:920px) {
@@ -298,6 +302,9 @@ body {
 
         .c_f_container {
             width: 86%;
+        }
+        .swiper{
+            width: 85%;
         }
     }
 

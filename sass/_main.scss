@@ -259,28 +259,23 @@ main {
     // .cursos-rec-container::-webkit-scrollbar {
     //     width: 0;
     // }
-
+ 
     .cursos-recomendados-swiper {
-        // margin-left: 2rem;
-        // margin-right: 2rem;
-        // background-color: red;
         width: 85%;
         overflow: hidden;
         margin: 0 auto;
-
     }
-
+  
     .cursos-rec-container {
         padding: 10px;
         display: flex;
         align-items: center;
         width: 100%;
         height: 340px;
-        // margin-left: 4rem;
 
         .cursos-erc-card {
-            // height: 260px;
-            // width: 200px !important;
+            height: 265px !important;
+            width: 210px !important;
             display: flex;
             flex-direction: column;
             margin-right: 10px;
@@ -310,7 +305,8 @@ main {
                 }
 
                 .c_r_rate {
-                    margin-bottom: 5px;
+                    margin-bottom: 2px;
+                    margin-top: -5px;
                     cursor: pointer;
 
                     p {
@@ -333,11 +329,10 @@ main {
                 }
 
                 .c_r_price {
-                    margin-top: 5px;
+                    margin-top: 0px;
                     font-size: 16px;
                     font-weight: 600;
-                    margin-top: 5px;
-                    margin-bottom: 8px;
+                    margin-bottom: 0px;
                     cursor: pointer;
                 }
 
@@ -377,7 +372,7 @@ main {
 #contratar_freelancers {
     width: 100%;
     margin-bottom: 2rem;
-    padding: 10px;
+    // padding: 10px;
     // background-color: rosybrown;
 
     h2 {
@@ -388,23 +383,29 @@ main {
         @include paragraph();
     }
 
-    .c_f_container::-webkit-scrollbar {
-        width: 0;
+    // .c_f_container::-webkit-scrollbar {
+    //     width: 0;
+    // }
+  
+    .contratar_freelancers-swiper{
+        overflow: hidden;
+        margin: 0 auto;
     }
 
     // container
     .c_f_container {
         width: 100%;
+        height: 340px;
         padding: 10px;
         display: flex;
-        overflow-x: auto;
+        align-items: center;
         margin: 0 auto;
+
 
         // card
         .c_f_card {
-            min-width: 230px;
-            width: 230px;
-            min-height: 300px;
+            width: 230px !important;
+            height: 300px !important;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
