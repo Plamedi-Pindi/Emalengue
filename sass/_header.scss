@@ -123,14 +123,9 @@ nav {
         ul li {
             width: 100%;
             list-style: none;
-            // padding: 5px;
             border-bottom: 1px solid #ddd;
             outline: none !important;
         }
-
-        // ul li:last-child {
-        //     border-bottom: none;
-        // }
 
         ul li:hover {
             color: rgb(3, 3, 83);
@@ -149,9 +144,9 @@ nav {
     max-height: 690px;
     transition: ease-in .5s;
     z-index: 2;
-    // position: absolute;
+    
 }
 
 .menu-cursos:hover{
-    margin-top: 20rem;
+    margin-top: 10rem;
 }
