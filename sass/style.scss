@@ -47,6 +47,19 @@ body {
     .contratar_freelancers-swiper{
         width: 85%;
     }
+    .menu-curso-container {
+        display: flex;
+        width: 480px !important;
+
+        ul li{
+            font-size: 15px;
+        }
+    }
+    .menu-cursos:hover{
+        margin-top: 0;
+    }
+   
+
 }
 
 @media(min-width:920px) {
