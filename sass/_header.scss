@@ -138,13 +138,11 @@ nav {
 
 
 }
-.ti-software{
-    position: relative;
-}
-.ti-container{
+
+.ti-container,
+.dev-container{
     position: absolute;
     background-color: #eee;
-    top: 1.8rem;
     left: 2rem;
     padding-left: 2rem !important;
     display: none;
@@ -152,7 +150,13 @@ nav {
 }
 .ti-software:hover> .ti-container{
     display: block ;
-    // max-height: 100px;
+    top: 1.4rem;
+    z-index: 100;
+}
+.dev:hover> .dev-container{
+    display: block ;
+    top: 1.4rem;
+    z-index: 100;
 }
 
 // /***** Ativa o dropdown menu cursos ******/ 
