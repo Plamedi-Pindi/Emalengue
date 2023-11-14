@@ -82,6 +82,7 @@ nav {
   transition: 0.5s;
 }
 
+/************ CATEGORIAS DE MENU CURSOS *************/
 .menu-cursos .menu-curso-container {
   position: relative;
   margin-left: 1rem;
@@ -109,62 +110,52 @@ nav {
   transition: ease-in-out 0.4s;
 }
 
+/*********** SUB CATEGORIAS DOS CURSOS ************/
 .ti-container,
 .dev-container,
 .negocio-container,
 .fin-cont-container,
 .prod-esc-container,
 .design-container,
-.marketing-container {
+.marketing-container,
+.est-vida-container,
+.Fot-vid-container,
+.saud-fit-container,
+.ensino-container,
+.desnvol-pes-container,
+.musica-container,
+.desnvol-pes-container {
   position: absolute;
   background-color: #eee;
-  left: 2rem;
-  padding-left: 2rem !important;
+  left: 4rem;
+  padding-left: 1.5rem !important;
   display: none;
   box-shadow: 1px 2px 5px #aaa;
   font-size: 15px;
   z-index: 1;
+  text-transform: capitalize;
 }
 
-.ti-software:hover > .ti-container {
+.ti-software:hover > .ti-container,
+.est-vida:hover > .est-vida-container,
+.Fot-vid:hover > .Fot-vid-container,
+.saud-fit:hover > .saud-fit-container,
+.ensino:hover > .ensino-container,
+.marketing:hover > .marketing-container,
+.design:hover > .design-container,
+.negocio:hover > .negocio-container,
+.fin-cont:hover > .fin-cont-container,
+.prod-esc:hover > .prod-esc-container,
+.dev:hover > .dev-container,
+.desnvol-pes:hover > .desnvol-pes-container {
   display: block;
   top: 1.4rem;
   z-index: 100;
 }
 
-.dev:hover > .dev-container {
+.musica:hover > .musica-container {
   display: block;
-  top: 1.4rem;
-  z-index: 100;
-}
-
-.prod-esc:hover > .prod-esc-container {
-  display: block;
-  top: 1.4rem;
-  z-index: 100;
-}
-
-.fin-cont:hover > .fin-cont-container {
-  display: block;
-  top: 1.4rem;
-  z-index: 100;
-}
-
-.negocio:hover > .negocio-container {
-  display: block;
-  top: 1.4rem;
-  z-index: 100;
-}
-
-.design:hover > .design-container {
-  display: block;
-  top: 1.4rem;
-  z-index: 100;
-}
-
-.marketing:hover > .marketing-container {
-  display: block;
-  top: 1.4rem;
+  bottom: 0.4rem;
   z-index: 100;
 }
 
@@ -805,16 +796,6 @@ body {
   .contratar_freelancers-swiper {
     width: 85%;
   }
-  .menu-curso-container {
-    display: flex;
-    width: 480px !important;
-  }
-  .menu-curso-container ul li {
-    font-size: 15px;
-  }
-  .menu-cursos:hover {
-    margin-top: 0;
-  }
 }
 @media (min-width: 920px) {
   .footer-body .ftr-calling-btn {
@@ -941,6 +922,13 @@ body {
     background-color: white;
     z-index: 100;
     box-shadow: 1px 2px 10px #111;
+    width: 480px !important;
+  }
+  .menu-cursos .menu-curso-container ul li {
+    font-size: 15px;
+  }
+  .menu-cursos:hover {
+    margin-top: 0;
   }
   #banner {
     margin-top: 5rem;
