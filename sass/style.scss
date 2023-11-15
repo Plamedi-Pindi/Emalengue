@@ -20,6 +20,20 @@ body {
 
 /****** GENERAL SITTINGS END *******/
 
+/*************** FUNCTIONS START***********************/
+// Menus
+@mixin menu-category() {
+    position: absolute;
+    margin-left: 0;
+    top: 40px;
+    background-color: white;
+    z-index: 100;
+    box-shadow: 1px 2px 10px #111;
+    width: 480px !important;
+}
+
+/*************** FUNCTIONS END***********************/
+
 /******** MEDIA QUIRY *********/
 @media(min-width:600px) {
     .footer-body {
@@ -44,10 +58,15 @@ body {
         width: 300px !important;
     }
 
-    .contratar_freelancers-swiper{
+    .contratar_freelancers-swiper {
         width: 85%;
     }
-   
+
+    .freelance-menu {
+        .freelance-menu-container {
+            width: 300px !important;
+        }
+    }
 }
 
 @media(min-width:920px) {
@@ -78,13 +97,13 @@ body {
 }
 
 @media(min-width: 992px) {
-   
-    nav{
+
+    nav {
         display: flex;
         flex-direction: column;
     }
 
-    .nav-add{
+    .nav-add {
         // background-color: rosybrown !important;
         width: 100%;
         height: 35px;
@@ -96,7 +115,7 @@ body {
         margin-bottom: 5px;
     }
 
-    .midia1{
+    .midia1 {
         // background-color: #888;
         width: 100px;
         position: relative;
@@ -104,15 +123,18 @@ body {
         display: flex;
         align-items: center;
         justify-content: space-around;
-        a{
+
+        a {
             color: #111;
             text-decoration: none;
         }
-        i{
+
+        i {
             font-size: 23px;
         }
     }
-    .nav-login1{
+
+    .nav-login1 {
         text-decoration: none;
         color: #111;
         padding: 4px;
@@ -124,13 +146,14 @@ body {
         font-size: 15px;
         right: 5rem;
         position: relative;
-       
-        i{
+
+        i {
             margin-right: 10px;
             font-size: 16px;
         }
     }
-    .nav-login:hover{
+
+    .nav-login1:hover {
         background-color: #111;
         border: none;
         padding: 5px;
@@ -138,7 +161,7 @@ body {
         transition: ease .5s;
     }
 
-    .nav-cadastrar1{
+    .nav-cadastrar1 {
         text-decoration: none;
         color: #ddd;
         padding: 5px;
@@ -150,7 +173,8 @@ body {
         right: 5rem;
         position: relative;
     }
-    .nav-cadastrar1:hover{
+
+    .nav-cadastrar1:hover {
         border: #111 solid 1px;
         background: transparent;
         color: #111;
@@ -159,7 +183,7 @@ body {
 
     .nav-cadastrar,
     .nav-login,
-    .midia{
+    .midia {
         display: none !important;
     }
 
@@ -186,34 +210,107 @@ body {
         }
     }
 
+    /********** CATEGORIAS DO CURSO *************/
     .menu-cursos {
         position: relative;
 
         .menu-curso-container {
-            position: absolute;
-            margin-left: 0;
-            top: 45px;
-            background-color: white;
-            z-index: 100;
-            box-shadow: 1px 2px 10px #111;
-            width: 480px !important;
-            
-            ul li{
+            @include menu-category();
+
+            ul li {
                 font-size: 15px;
             }
+
+            ul {
+                width: 300px;
+            }
         }
-        
+
     }
-    .menu-cursos:hover{
+
+    .menu-cursos:hover {
         margin-top: 0;
+    }
+
+    /*********** SUBCATEGORIA DO CURSO  ************/
+    .menu-cursos:hover>.menu-curso-container {
+        margin-top: 0;
+        display: flex !important;
+
+        .ul li {
+            font-size: 15px;
+        }
+    }
+
+    // DEFINE A FLEXIBILIDADE DOS SUBMENUS LONGOS
+
+    // Lado esquerdo
+    .negocio:hover>.negocio-container,
+    .fin-cont:hover>.fin-cont-container,
+    .design:hover>.design-container,
+    .marketing:hover>.marketing-container,
+    .saud-fit:hover>.saud-fit-container {
+        display: flex;
+
+        ul {
+            width: 200px;
+        }
+    }
+
+    // Lado direto
+    .saud-fit:hover>.saud-fit-container,
+    .ensino:hover>.ensino-container,
+    .desnvol-pes:hover>.desnvol-pes-container {
+        display: flex;
+
+        ul {
+            width: 180px;
+        }
+    }
+
+    // Caso particular
+    .marketing:hover>.marketing-container {
+        display: flex;
+        top: -150px;
+
+        // bottom: 0.4rem;
+        ul {
+            width: 200px;
+        }
+    }
+
+     /********* CATEGORIA DOS FREELANCERS************/
+     .freelance-menu {
+        position: relative;
+
+        .freelance-menu-container {
+            @include menu-category();
+
+            ul li {
+                font-size: 15px;
+            }
+            ul {
+                width: 300px;
+            }
+        }
+    }
+    .freelance-menu:hover > .freelance-menu-container {
+        margin-top: 0;
+        display: flex !important;
         
+        .ul li {
+            font-size: 15px;
+        }
+    }
+    .freelance-menu:hover {
+        margin-top: 0;
     }
 
     // Banner Start
     #banner {
         margin-top: 5rem;
     }
-   
+
     .carousel_1 {
         display: flex !important;
         align-items: center !important;
@@ -232,6 +329,7 @@ body {
             }
         }
     }
+
     .carousel_2 {
         display: flex !important;
         align-items: center !important;
@@ -250,7 +348,7 @@ body {
             .bnnr-saberMais:hover {
                 color: #111 !important;
             }
-            
+
         }
     }
 
@@ -258,20 +356,22 @@ body {
 
     // Cursos Recomendados Start
     #cursos-recomendados {
-        h2{
+        h2 {
             text-align: start;
             width: 86%;
             margin: 0 auto;
             font-size: 25px;
         }
-        .swiper{
+
+        .swiper {
             width: 85%;
             // background-color: #ddd;
         }
+
         .cursos-recomendados-swiper {
             margin: 0 auto;
             // width: 80%;
-           
+
         }
 
         .c_r_init {
@@ -298,12 +398,13 @@ body {
 
     // Contratar Freelancer Start
     #contratar_freelancers {
-        h2{
+        h2 {
             text-align: start;
             width: 86%;
             margin: 0 auto;
             font-size: 25px;
         }
+
         .c_f_init {
             width: 86%;
             margin: 0 auto;
@@ -313,7 +414,8 @@ body {
         .c_f_container {
             width: 86%;
         }
-        .swiper{
+
+        .swiper {
             width: 85%;
         }
     }
@@ -324,12 +426,13 @@ body {
     #parceiros {
         width: 100%;
 
-        h2{
+        h2 {
             text-align: start;
             width: 86%;
             margin: 0 auto;
             font-size: 25px;
         }
+
         .parceiros_container {
             flex-direction: row;
             justify-content: space-around;
@@ -374,12 +477,13 @@ body {
 
     // TESTEMUNHO START
     #testemunhos {
-        h2{
+        h2 {
             text-align: start;
             width: 86%;
             margin: 0 auto;
             font-size: 25px;
         }
+
         .t_init {
             width: 86%;
             margin: 0 auto;
