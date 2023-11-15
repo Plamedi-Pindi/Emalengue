@@ -202,7 +202,7 @@ nav {
 }
 
 
-// CATEGORIA DOS FREEELANCERS
+/************* CATEGORIA DOS FREEELANCERS **************/ 
 
 .freelance-menu {
     .freelance-menu-container {
@@ -238,4 +238,51 @@ nav {
 
 .freelance-menu:hover {
     margin-top: 4rem;
+}
+
+/************* SUBCATEGORIA FREELANCERS *******************/ 
+.fr-transporte-container,
+.fr-designer-container,
+.fr-finaca-container,
+.fr-beleza-container,
+.fr-artes-container,
+.fr-educacao-container,
+.fr-saude-container,
+.fr-const-container,
+.fr-mecanic-container,
+.fr-corte-container,
+.fr-culinaria-container,
+.fr-imob-container{
+    position: absolute;
+    background-color: #eee;
+    left: 4rem;
+    padding-left: 1.5rem !important;
+    display: none;
+    box-shadow: 1px 2px 5px #aaa;
+    font-size: 15px;
+    z-index: 1;
+    text-transform: capitalize;
+}
+
+.fr-transporte:hover > .fr-transporte-container,
+.fr-designer:hover > .fr-designer-container,
+.fr-finaca:hover > .fr-finaca-container,
+.fr-beleza:hover > .fr-beleza-container,
+.fr-artes:hover > .fr-artes-container,
+.fr-educacao:hover > .fr-educacao-container,
+.fr-saude:hover > .fr-saude-container,
+.fr-const:hover > .fr-const-container,
+.fr-mecanic:hover > .fr-mecanic-container,
+.fr-corte:hover > .fr-corte-container,
+.fr-culinaria:hover > .fr-culinaria-container
+{
+    display: block;
+    top: 1.4rem;
+    z-index: 100;
+}
+.fr-imob:hover > .fr-imob-container
+{
+    display: block;
+    bottom: 0.4rem;
+    z-index: 100;
 }

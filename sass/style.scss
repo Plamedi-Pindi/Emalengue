@@ -222,7 +222,7 @@ body {
             }
 
             ul {
-                width: 300px;
+                width: 200px;
             }
         }
 
@@ -264,7 +264,7 @@ body {
         display: flex;
 
         ul {
-            width: 180px;
+            width: 140px;
         }
     }
 
@@ -510,6 +510,27 @@ body {
     .footer-body {
         .ftr-content {
             width: 60%;
+        }
+    }
+    // .menu-cursos {
+    //     .menu-curso-container {
+    //         ul {
+    //             width: 200px !important;
+    //         }
+    //     }
+    // }
+}
+@media(min-width:1200px) {
+    .footer-body {
+        .ftr-content {
+            width: 60%;
+        }
+    }
+    .menu-cursos {
+        .menu-curso-container {
+            ul {
+                width: 198px !important;
+            }
         }
     }
 }
