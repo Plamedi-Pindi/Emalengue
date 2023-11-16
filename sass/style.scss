@@ -3,6 +3,7 @@
 @import './footer';
 @import './fonts';
 @import './main';
+@import './freelancer';
 
 /****** GENERAL SITTINGS START *******/
 * {
@@ -304,6 +305,10 @@ body {
     }
     .freelance-menu:hover {
         margin-top: 0;
+    }
+    /************ PAGINA DE FREELANCERS ****************/
+    #fr_init_section{
+        margin-top: 6.5rem;
     }
 
     // Banner Start

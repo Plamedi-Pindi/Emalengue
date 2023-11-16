@@ -1,0 +1,33 @@
+
+
+#fr_init_section{
+    margin-top: 4rem;
+    // background-color: red;
+    width: 100%;
+
+    .fr_calling{
+        width: 100% !important;
+        margin-bottom: -1rem !important;
+        margin: 0 auto;
+        // background-color: yellow;
+        // margin-bottom: 10px;
+        // padding: 10px;
+        a{
+            margin-bottom: 10px;
+        }
+    }
+
+    select{
+        margin-bottom: 10px;
+    }
+    .fr_search{
+        margin-bottom: 10px;
+        button{
+            margin-left: 10px;
+        }
+    }
+
+    form{
+        margin-bottom: -1rem;
+    }
+}
