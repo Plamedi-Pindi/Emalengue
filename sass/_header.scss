@@ -139,6 +139,16 @@ nav {
         }
     }
 }
+// /***** Ativa o dropdown menu cursos ******/ 
+.menu-cursos:hover>.menu-curso-container {
+    display: block;
+    transition: ease-in .5s;
+    z-index: 2;
+}
+
+.menu-cursos:hover {
+    margin-top: 11.5rem;
+}
 
 
 /************* CATEGORIA DOS FREEELANCERS **************/ 
@@ -166,4 +176,14 @@ nav {
 
         }
     }
+}
+// Dropdaw
+.freelance-menu:hover>.freelance-menu-container {
+    display: block;
+    transition: ease-in .5s;
+    z-index: 2;
+}
+
+.freelance-menu:hover {
+    margin-top: 6.5rem;
 }

@@ -109,6 +109,16 @@ nav {
   transition: ease-in-out 0.4s;
 }
 
+.menu-cursos:hover > .menu-curso-container {
+  display: block;
+  transition: ease-in 0.5s;
+  z-index: 2;
+}
+
+.menu-cursos:hover {
+  margin-top: 11.5rem;
+}
+
 /************* CATEGORIA DOS FREEELANCERS **************/
 .freelance-menu .freelance-menu-container {
   position: relative;
@@ -133,6 +143,16 @@ nav {
   transform: translateX(8px);
   border-radius: 30px;
   transition: ease-in-out 0.4s;
+}
+
+.freelance-menu:hover > .freelance-menu-container {
+  display: block;
+  transition: ease-in 0.5s;
+  z-index: 2;
+}
+
+.freelance-menu:hover {
+  margin-top: 6.5rem;
 }
 
 /****** CALLING BUTTON ANIMATION *******/
