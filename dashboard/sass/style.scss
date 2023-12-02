@@ -60,14 +60,40 @@ footer{
 @media(min-width:500px){
     body{
         display: grid;
-        grid-template-columns: 0.5fr 1fr 1fr 1fr !important;    
+        grid-template-columns: 0.5fr 1fr 1fr 1fr ;    
     }
     
 }
 @media(min-width:720px){
     body{
         display: grid;
-        grid-template-columns: 0.4fr 1fr 1fr 1fr !important;    
+        grid-template-columns: 0.4fr 1fr 1fr 1fr ;    
     }
     
+}
+@media(min-width:992px){
+    body{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr !important;    
+    }
+    #sdb-slide{
+        display: none;
+    }
+    .sb-content{
+        display: inline !important;
+    }
+    .sd-title{
+        display: block;
+        color: #ddd;
+        font-size: 16px;
+        text-transform: uppercase;
+        margin-left: 15px;
+        margin-bottom: 20px;
+    }
+
+    #sidebar{
+        .sb-content{
+            margin-left: 10px !important;
+        }
+    }
 }
