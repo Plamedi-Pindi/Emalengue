@@ -60,14 +60,14 @@ footer{
 @media(min-width:500px){
     body{
         display: grid;
-        grid-template-columns: 0.5fr 1fr 1fr 1fr;    
+        grid-template-columns: 0.5fr 1fr 1fr 1fr !important;    
     }
     
 }
 @media(min-width:720px){
     body{
         display: grid;
-        grid-template-columns: 0.4fr 1fr 1fr 1fr;    
+        grid-template-columns: 0.4fr 1fr 1fr 1fr !important;    
     }
     
 }
