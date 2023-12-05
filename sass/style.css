@@ -931,6 +931,161 @@ main {
     width: 310px;
   }
 }
+#cursos_display h2 {
+  font-size: 26px;
+  font-weight: 600;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.cursos {
+  margin-top: 5rem;
+}
+.cursos form {
+  display: flex;
+  margin-bottom: 2rem;
+}
+.cursos .cs_recomendados h2 {
+  margin-bottom: -40px !important;
+  margin-top: -90px;
+}
+
+.dropdown {
+  margin-bottom: 10px;
+}
+
+#cursos_display {
+  padding-top: 3rem;
+  width: 100%;
+  background-color: #eee;
+}
+#cursos_display .cs_heart {
+  position: absolute;
+  right: 40px;
+  top: 20px;
+}
+#cursos_display .cs_heart i {
+  color: #fff;
+  font-size: 25px;
+}
+#cursos_display .cs_dis_container {
+  width: 100%;
+  margin: 0 auto;
+}
+#cursos_display .cs_dis_container .cs_dis_card {
+  background-color: #fff;
+  position: relative;
+  margin-bottom: 2rem;
+}
+#cursos_display .cs_dis_container .cs_dis_card img {
+  margin-top: 10px;
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+}
+#cursos_display .cs_dis_container .cs_dis_card_contente {
+  margin-top: 15px;
+}
+#cursos_display .cs_dis_container .cs_dis_card_contente .cs_dis_user {
+  display: flex;
+  align-items: center;
+}
+#cursos_display .cs_dis_container .cs_dis_card_contente .cs_dis_user img {
+  width: 38px;
+  height: 38px;
+  border-radius: 100%;
+  margin-right: 8px;
+  margin-top: 0;
+}
+#cursos_display .cs_dis_container .cs_dis_card_contente .cs_dis_user h5 {
+  font-size: 15px;
+  padding-top: 8px;
+}
+#cursos_display .cs_dis_container .cs_dis_descriptio {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 15px;
+  color: #888;
+}
+#cursos_display .cs_dis_container .cs_rate {
+  margin-bottom: 20px;
+}
+#cursos_display .cs_dis_container .cs_rate p {
+  display: inline;
+  margin-left: 5px;
+}
+#cursos_display .cs_dis_container .cs_rate span {
+  color: #888;
+}
+
+.cs_pagination_container {
+  padding-top: 10px;
+  padding-bottom: 3rem;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.cs_pagination {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cs_pagination li {
+  background-color: #fff;
+}
+
+.cs_pagination a {
+  padding: 7px 14px;
+  text-decoration: none;
+  color: black;
+  border: 1px solid #ddd;
+  float: left;
+  font-size: 14px;
+  color: #0076ff;
+  transition: 0.5s;
+}
+
+.cs_pagination a:hover {
+  background: #0076ff;
+  color: white;
+}
+
+.cs_active {
+  background-color: #0076ff;
+  color: #fff !important;
+}
+
+@media (min-width: 992px) {
+  #cursos_display h2 {
+    text-align: start;
+    width: 86%;
+    margin: 0 auto;
+  }
+  .cursos {
+    margin-top: 8rem;
+  }
+  .cs_recomendados h2 {
+    margin-top: -10rem !important;
+  }
+  .cs_dis_card {
+    background-color: #fff;
+    position: relative;
+    width: 310px;
+  }
+  .cs_dis_container {
+    width: 95% !important;
+  }
+  .cont_card_container {
+    width: 95% !important;
+  }
+  .cont_card_container .cont_card {
+    width: 310px;
+  }
+}
 /****** GENERAL SITTINGS START *******/
 * {
   margin: 0;

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- BOOTSTRAP v5.3 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- APP CSS -->
+    <link rel="stylesheet" href="sass/style.css">
+    <title>Cadastrar Freelancer</title>
+</head>
+
+<body id="t">
+    <!-- HEADER START -->
+    <header>
+        <div class="header-container ">
+            <div class="logo">
+                <a href="index.html">eMALENGUE</a>
+            </div>
+            <div class="hd-container">
+                <div id="user-menu">
+                    <img src="img/user.jpg" alt="" id="hd-user-img"></img>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- HEADER END -->
+
+    <!-- SIDEBAR START -->
+    <div id="sidebar">
+        <nav>
+            <ul>
+                <li id="sdb-slide"><i class="bi bi-arrow-right" id="slide-icon"></i></li>
+            </ul>
+
+            <h3 class="sd-title">Painel de Controlo</h3>
+            <ul>
+                <li>
+                    <a href="index.html"><i class="bi bi-house-fill"></i>
+                        <span class="sb-content">Home</span>
+                    </a>
+                </li>
+            </ul>
+
+            <h3 class="sd-title">Freelancer</h3>
+            <ul>
+                <li>
+                    <a href="#"><i class="bi bi-person-fill"></i>
+                        <span class="sb-content">Freelancers</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="freelance-register.html"><i class="bi bi-person-fill-add"></i>
+                        <span class="sb-content">Cadastrar Freelancer</span>
+                    </a>
+                </li>
+            </ul>
+
+            <h3 class="sd-title">Curso</h3>
+            <ul>
+                <li>
+                    <a href="#"><i class="bi bi-grid-fill"></i>
+                        <span class="sb-content">Cursos</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#"><i class="bi bi-file-earmark-plus-fill"></i>
+                        <span class="sb-content">Novo Curso</span>
+                    </a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="#"><i class="bi bi-building-fill"></i>
+                        <span class="sb-content">Projetos</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="new-project.html"><i class="bi bi-building-fill-add"></i></i>
+                        <span class="sb-content">Publicar Projeto</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <!-- SIDEBAR END -->
+
+    <!-- MAIN START -->
+    <main>
+        <div class="container ">
+            <div class="fr_rg_container">
+                <!-- <a href="index.html" class="logo">eMaLENGUE</a> -->
+                <h2>Cadastra freelancer</h2>
+                <!-- Form start -->
+                <form action="">
+                    <div class="row">
+                        <!-- update profile photo -->
+                        <div class="col-10  fr_rg_photo container-fluid">
+                            <img src="img/profile.jpg" alt="" id="fr_rg_photo_img">
+                            <input type="file" class="form-control" id="fr_rg_photo_input" name="profile_img">
+                        </div>
+                        <!-- Personal Information -->
+                        <div class="col-10 col-md-5 fr_rg_personalData container-fluid">
+                            <!-- Name -->
+                            <label for="">Nome <span>*</span></label>
+                            <input type="text" placeholder="Seu nome..." class="form-control " required>
+                            <!-- Email -->
+                            <label for="">Email <span>*</span></label>
+                            <input type="text" placeholder="...@gmail.com" class="form-control" required>
+                            <!-- Password -->
+                            <label for="">Senha <span>*</span></label>
+                            <input type="password" placeholder="" class="form-control" required>
+                            <!-- Country -->
+                            <label for="">Pais <span>*</span></label>
+                            <select name="" id="" class="form-select" required>
+                                <option value="" selected>Angola</option>
+                                <option value="">Amerca</option>
+                                <option value="">Argentina</option>
+                                <option value="">Brazil</option>
+                                <option value="">Canada</option>
+                            </select>
+
+                            <!-- Province -->
+                            <label for="">Provincia <span>*</span></label>
+                            <input type="password" placeholder="Provincia" class="form-control" required>
+                        </div>
+
+                        <!-- Proffssional Information -->
+                        <div class="col-10 col-md-5 fr_rg_professionalData container-fluid">
+
+                            <!-- Habiliteis -->
+                            <label for="">Principais Habilidades <span>*</span></label>
+                            <input type="password" placeholder="habilidades" class="form-control" required>
+
+                            <!-- Cetification -->
+                            <label for="">Certificações <span>*</span></label>
+                            <input type="password" placeholder="Certificações" class="form-control" required>
+
+                            <!-- About User -->
+                            <label for="">Sobre mim <span>*</span></label>
+                            <textarea name="" id="" cols="30" rows="7" placeholder="Escreva sobre você..."
+                                class="form-control" required></textarea>
+                        </div>
+
+                        <!-- update Docs -->
+                        <div class="col-10 col-md-5 container-fluid">
+                            <label for="">Anexar Bilhete de Identidade <span>*</span></label>
+                            <input type="file" placeholder="" class="form-control" required>
+                        </div>
+                        <div class="col-10 col-md-5 fr_rg_doc container-fluid">
+                            <label for="">Anexar CV <span>*</span></label>
+                            <input type="file" class="form-control" required>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Cadastrar</button>
+                    </div>
+                </form>
+                <!-- Form end -->
+            </div>
+        </div>
+    </main>
+    <!-- MAIN END -->
+    <footer>
+        <p>copyright &copy; 2023</p>
+    </footer>
+
+    <!-- APP JS -->
+    <script src="js/app.js"></script>
+</body>
+
+</html>

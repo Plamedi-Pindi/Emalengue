@@ -14,10 +14,10 @@ for (var i = 0; i < sb_content.length; i++) {
 // Evento para Espandeir o Sidebar
 sdb_slide.addEventListener('click', () => {
     let icon = document.getElementById('slide-icon');
-
+    let sidebar =document.getElementById('sidebar')
 
     if (body.style.gridTemplateColumns == '0.6fr 1fr 1fr 1fr') {
-
+        sidebar.style.zIndex = 2; 
         body.style.transition = '0.5s';
         body.style.gridTemplateColumns = '6fr 1fr 1fr 1fr';
     }
@@ -48,3 +48,6 @@ sdb_slide.addEventListener('click', () => {
 
 
 });
+
+
+

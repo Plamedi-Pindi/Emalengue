@@ -14,6 +14,7 @@ body{
 
 header{
     background-color: rgb(11, 11, 49);
+    // height: 48px;
     height: 7vh;
 
     // grig config
@@ -23,6 +24,7 @@ header{
 
 #sidebar{
     background-color: rgb(2, 2, 92);
+    // height: 00px;
     height: 93vh;
 
     // grig config
@@ -32,14 +34,17 @@ header{
 
 main{
     background-color: #eee;
-    height: 88vh;
+    height: 89vh;
     grid-column: 2 / span 3;
     grid-row: 2 / span 2;
+
+    // Scroll
+    overflow-y: auto;
 }
 
 footer{
     background-color: #ddd;
-    height: 5vh;
+    height: 4vh;
     grid-column: 2 / span 3;
 
 
@@ -53,7 +58,9 @@ footer{
 /***** IMPORTING FILE START *****/
     @import './header';
     @import './sidebar';
-
+    @import './frRegister';
+    @import './newProject';
+    
     
 /***** IMPORTING FILE END *****/
 
@@ -76,6 +83,7 @@ footer{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr !important;    
     }
+
     #sdb-slide{
         display: none;
     }
@@ -85,7 +93,7 @@ footer{
     .sd-title{
         display: block;
         color: #ddd;
-        font-size: 16px;
+        font-size: 14px;
         text-transform: uppercase;
         margin-left: 15px;
         margin-bottom: 20px;
@@ -96,4 +104,21 @@ footer{
             margin-left: 10px !important;
         }
     }
+    ul:first-child{
+        border-bottom: none !important;
+    }
+    main .container{
+        width: 90%;
+    }
+    #fr_rg_photo_input{
+        width: 45%;
+    }
+
+}
+@media(min-width:1200px){
+    body{
+        display: grid;
+        grid-template-columns: 0.7fr 1fr 1fr 1fr !important;    
+    }
+    
 }
