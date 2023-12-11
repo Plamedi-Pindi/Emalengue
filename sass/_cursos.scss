@@ -1,29 +1,45 @@
-
 @import './fonts';
 
-#cursos_display{
-    h2{
+.cursos {
+    .cs_recomendados {
+        h2 {
+            padding-bottom: 4rem !important;
+        }
+    }
+    .curso-search {
+        input {
+            margin-right: 10px;
+        }
+    }
+
+}
+
+#cursos_display {
+    h2 {
         font-size: 26px;
         font-weight: 600;
         text-align: center;
         padding-bottom: 2rem;
     }
 }
-.cursos{
+
+.cursos {
     margin-top: 5rem;
-    form{
+
+    form {
         display: flex;
         margin-bottom: 2rem;
     }
 
-    .cs_recomendados{
-        h2{
+    .cs_recomendados {
+        h2 {
             margin-bottom: -40px !important;
             margin-top: -90px;
         }
     }
 }
-.dropdown{
+
+.dropdown {
     margin-bottom: 10px;
 }
 
@@ -103,69 +119,79 @@
                 color: #888;
             }
         }
-    }    
+    }
 }
 
 // Pagination
-.cs_pagination_container{
+.cs_pagination_container {
     padding-top: 10px;
     padding-bottom: 3rem;
     width: 80%;
     margin: 0 auto;
 }
 
-.cs_pagination{
+.cs_pagination {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     flex-wrap: wrap;
     list-style: none;
     padding: 0;
     margin: 0;
-    
-}
-.cs_pagination li{
-    background-color: #fff;
 
+    i{
+        font-size: 20px;
+    }
 }
-.cs_pagination a{
-    padding: 7px 14px;
+
+.cs_pagination a {
+    padding: 7px 13px;
     text-decoration: none;
     color: black;
-    border: 1px solid #ddd;
     float: left;
-    font-size: 14px;
-    color: #0076ff;
+    font-size: 15px;
+    color: #777;
     transition: .5s;
-
 }
 
-.cs_pagination a:hover{
-    background: #0076ff;
-    color: white;
+.cs_pagination a:hover {
+    color: #222;
 }
 
-.cs_active{
-    background-color: #0076ff;
-    color: #fff !important ;
+.cs_active {
+    border-bottom: #222 2px solid;
+    color: #222 !important;
 }
 
 
 
-@media(min-width:992px){
-    
-#cursos_display{
-    h2{
-        text-align: start;
-        width: 86%;
-        margin: 0 auto; 
+@media(min-width:720px) {
+    .cs_pagination_container{
+        width: 65%;
     }
-    
+
 }
-    .cursos{
+
+@media(min-width:992px) {
+
+    .cs_pagination_container{
+        width: 60%;
+    }
+
+    #cursos_display {
+        h2 {
+            text-align: start;
+            width: 86%;
+            margin: 0 auto;
+        }
+
+    }
+
+    .cursos {
         margin-top: 8rem;
     }
-    .cs_recomendados{
-        h2{
+
+    .cs_recomendados {
+        h2 {
             // margin-bottom: -40px !important;
             margin-top: -10rem !important;
         }
@@ -182,11 +208,17 @@
         width: 95% !important;
     }
 
-    .cont_card_container{
+    .cont_card_container {
         width: 95% !important;
 
-        .cont_card{
+        .cont_card {
             width: 310px;
         }
+    }
+}
+
+@media(min-width:1020px) {
+    .cs_dis_card {
+        width: 296px;
     }
 }

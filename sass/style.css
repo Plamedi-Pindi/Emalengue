@@ -467,6 +467,7 @@ main {
   margin-right: 10px;
   margin-left: 4px;
   margin-bottom: 1rem;
+  border: 1px solid #eee;
 }
 #cursos-recomendados .cursos-rec-container .cursos-erc-card img {
   width: 100%;
@@ -883,39 +884,44 @@ main {
 
 .fr_pagination {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   flex-wrap: wrap;
   list-style: none;
   padding: 0;
   margin: 0;
 }
-
-.fr_pagination li {
-  background-color: #fff;
+.fr_pagination i {
+  font-size: 20px;
 }
 
 .fr_pagination a {
-  padding: 7px 14px;
+  padding: 7px 13px;
   text-decoration: none;
   color: black;
-  border: 1px solid #ddd;
   float: left;
-  font-size: 14px;
-  color: #0076ff;
+  font-size: 15px;
+  color: #777;
   transition: 0.5s;
 }
 
 .fr_pagination a:hover {
-  background: #0076ff;
-  color: white;
+  color: #222;
 }
 
 .fr_active {
-  background-color: #0076ff;
-  color: #fff !important;
+  border-bottom: #222 2px solid;
+  color: #222 !important;
 }
 
+@media (min-width: 720px) {
+  .fr_pagination_container {
+    width: 65%;
+  }
+}
 @media (min-width: 992px) {
+  .fr_pagination_container {
+    width: 60%;
+  }
   .fr_dis_card {
     background-color: #fff;
     position: relative;
@@ -931,6 +937,18 @@ main {
     width: 310px;
   }
 }
+@media (min-width: 1020px) {
+  .fr_dis_card {
+    width: 296px;
+  }
+}
+.cursos .cs_recomendados h2 {
+  padding-bottom: 4rem !important;
+}
+.cursos .curso-search input {
+  margin-right: 10px;
+}
+
 #cursos_display h2 {
   font-size: 26px;
   font-weight: 600;
@@ -1027,39 +1045,44 @@ main {
 
 .cs_pagination {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   flex-wrap: wrap;
   list-style: none;
   padding: 0;
   margin: 0;
 }
-
-.cs_pagination li {
-  background-color: #fff;
+.cs_pagination i {
+  font-size: 20px;
 }
 
 .cs_pagination a {
-  padding: 7px 14px;
+  padding: 7px 13px;
   text-decoration: none;
   color: black;
-  border: 1px solid #ddd;
   float: left;
-  font-size: 14px;
-  color: #0076ff;
+  font-size: 15px;
+  color: #777;
   transition: 0.5s;
 }
 
 .cs_pagination a:hover {
-  background: #0076ff;
-  color: white;
+  color: #222;
 }
 
 .cs_active {
-  background-color: #0076ff;
-  color: #fff !important;
+  border-bottom: #222 2px solid;
+  color: #222 !important;
 }
 
+@media (min-width: 720px) {
+  .cs_pagination_container {
+    width: 65%;
+  }
+}
 @media (min-width: 992px) {
+  .cs_pagination_container {
+    width: 60%;
+  }
   #cursos_display h2 {
     text-align: start;
     width: 86%;
@@ -1084,6 +1107,11 @@ main {
   }
   .cont_card_container .cont_card {
     width: 310px;
+  }
+}
+@media (min-width: 1020px) {
+  .cs_dis_card {
+    width: 296px;
   }
 }
 /****** GENERAL SITTINGS START *******/
