@@ -1074,6 +1074,31 @@ main {
   color: #222 !important;
 }
 
+#instrutor {
+  min-height: 350px;
+  background-color: #eee;
+  padding-top: 1rem;
+}
+#instrutor .instrutor_container {
+  padding-bottom: 2rem;
+}
+#instrutor .instrutor_container,
+#instrutor .row {
+  width: 100%;
+  height: 100%;
+}
+#instrutor .ins_content button {
+  border-radius: 0px !important;
+}
+#instrutor .ins_img {
+  margin-bottom: 10px;
+  height: 100%;
+}
+#instrutor .ins_img img {
+  width: 100%;
+  height: 340px;
+}
+
 @media (min-width: 720px) {
   .cs_pagination_container {
     width: 65%;
@@ -1107,6 +1132,17 @@ main {
   }
   .cont_card_container .cont_card {
     width: 310px;
+  }
+  #instrutor {
+    margin-top: -4rem;
+    padding-top: 1rem;
+  }
+  .instrutor_container {
+    width: 86% !important;
+    margin: 0 auto;
+  }
+  .ins_content {
+    margin-top: 2rem;
   }
 }
 @media (min-width: 1020px) {

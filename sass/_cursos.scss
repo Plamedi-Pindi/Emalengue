@@ -162,6 +162,34 @@
     color: #222 !important;
 }
 
+#instrutor{
+    min-height: 350px;
+    background-color: #eee;
+    padding-top: 1rem;
+    
+    .instrutor_container{
+        padding-bottom: 2rem;
+    } 
+    .instrutor_container, 
+    .row{
+        width: 100%;
+        height: 100%;
+    }
+    .ins_content{
+        button{
+            border-radius: 0px !important;
+        }
+    }
+    .ins_img{
+        margin-bottom: 10px;
+        height: 100%;
+        img{
+            width: 100%;
+            height: 340px;
+        }
+    }
+}
+
 
 
 @media(min-width:720px) {
@@ -214,6 +242,19 @@
         .cont_card {
             width: 310px;
         }
+    }
+
+    #instrutor{
+        margin-top: -4rem;
+        padding-top: 1rem;
+    }
+
+    .instrutor_container{
+        width: 86% !important;
+        margin: 0 auto;
+    }
+    .ins_content{
+        margin-top: 2rem;
     }
 }
 
