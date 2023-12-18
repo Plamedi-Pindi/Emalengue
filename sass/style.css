@@ -1,4 +1,5 @@
 /***** FILE IMPOTINHG *****/
+@import './cadastro.css';
 nav {
   position: fixed !important;
   top: 0;
@@ -934,7 +935,7 @@ main {
     width: 95% !important;
   }
   .cont_card_container .cont_card {
-    width: 310px;
+    width: 300px !important;
   }
 }
 @media (min-width: 1020px) {
@@ -1091,7 +1092,7 @@ main {
   border-radius: 0px !important;
 }
 #instrutor .ins_img {
-  margin-bottom: 10px;
+  margin-bottom: 2rem;
   height: 100%;
 }
 #instrutor .ins_img img {
@@ -1102,6 +1103,9 @@ main {
 @media (min-width: 720px) {
   .cs_pagination_container {
     width: 65%;
+  }
+  .ins_content {
+    margin-top: 3rem;
   }
 }
 @media (min-width: 992px) {
@@ -1142,7 +1146,7 @@ main {
     margin: 0 auto;
   }
   .ins_content {
-    margin-top: 2rem;
+    margin-top: 3rem;
   }
 }
 @media (min-width: 1020px) {
