@@ -12,7 +12,7 @@
 
 .fr_profil_banner {
     margin-top: 4rem;
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(../img/Freelancer/4.jpg);
     height: 200px;
     display: flex;
     flex-direction: column;
@@ -191,6 +191,9 @@
         width: 86%;
         margin: 3rem auto;
 
+    }
+    .fr_profil_banner{
+        margin-top: 6rem ;
     }
 }
 
