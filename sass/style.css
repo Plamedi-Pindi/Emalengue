@@ -1154,6 +1154,173 @@ main {
     width: 296px;
   }
 }
+.fr_profil_banner {
+  margin-top: 4rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.fr_profil_banner h2 {
+  color: #eee;
+  font-size: 35px;
+  font-weight: 300;
+}
+.fr_profil_banner .fr_pr_line {
+  display: block;
+  background-color: #ddd;
+  height: 1px;
+  width: 80px;
+}
+.fr_profil_banner ul {
+  display: inherit;
+  margin: 0;
+  margin-top: 10px;
+}
+.fr_profil_banner ul li {
+  list-style: none;
+  margin-right: 10px;
+}
+.fr_profil_banner ul li:first-child::after {
+  content: "/";
+  color: #eee;
+  margin-left: 10px;
+}
+.fr_profil_banner ul li a {
+  text-decoration: none;
+  color: #eee;
+  font-weight: 300;
+}
+
+.fr_profil_container {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+.fr_profil_data figure {
+  width: 100%;
+  height: 350px;
+  position: relative;
+}
+.fr_profil_data figure img {
+  width: inherit;
+  height: 100%;
+}
+.fr_profil_data figcaption {
+  position: absolute;
+  width: 100%;
+  bottom: 8px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+.fr_profil_data figcaption ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+}
+.fr_profil_data figcaption ul li {
+  margin-right: 8px;
+}
+.fr_profil_data figcaption ul li a {
+  text-decoration: none;
+  background-color: rgb(221, 145, 3);
+  color: #fff;
+  padding: 12px 10px;
+}
+.fr_profil_data figcaption ul li a:hover {
+  background-color: rgb(158, 104, 4);
+}
+.fr_profil_data figcaption ul i {
+  font-size: 20px;
+}
+.fr_profil_data h3 {
+  color: #555;
+  font-size: 18px;
+}
+.fr_profil_data p {
+  color: #555;
+  font-weight: 600;
+  font-size: 15px;
+}
+.fr_profil_data p span {
+  color: #888;
+  font-weight: 400;
+}
+.fr_profil_data .fr_pr_phone,
+.fr_profil_data .fr_pr_email,
+.fr_profil_data .fr_pr_website {
+  border-top: 1px solid #ddd;
+  padding-top: 10px;
+}
+.fr_profil_data .fr_pr_phone h4,
+.fr_profil_data .fr_pr_email h4,
+.fr_profil_data .fr_pr_website h4 {
+  color: #555;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+.fr_profil_data .fr_pr_phone p,
+.fr_profil_data .fr_pr_email p,
+.fr_profil_data .fr_pr_website p {
+  color: #888;
+  font-size: 14px;
+}
+
+.fr_pr_skills {
+  width: 100%;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+}
+.fr_pr_skills h3 {
+  color: rgb(211, 139, 5);
+  font-size: 20px;
+  padding-bottom: 1rem;
+  border-bottom: solid 1px;
+}
+.fr_pr_skills h3 span {
+  color: #333;
+}
+.fr_pr_skills p {
+  font-size: 15px;
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+.fr_pr_skills .progress {
+  height: 10px;
+}
+
+.fr_pr_works h3 {
+  color: rgb(211, 139, 5);
+  font-size: 20px;
+  padding-bottom: 1rem;
+  border-bottom: solid 1px;
+}
+.fr_pr_works h3 span {
+  color: #333;
+}
+.fr_pr_works figure img {
+  width: inherit;
+}
+
+@media (min-width: 720px) {
+  .fr_profil_data {
+    border: 1px solid #eee;
+  }
+}
+@media (min-width: 992px) {
+  .fr_profil_container {
+    width: 86%;
+    margin: 3rem auto;
+  }
+}
+@media (min-width: 1024px) {
+  .progress_conatiner {
+    width: 60%;
+  }
+}
 /****** GENERAL SITTINGS START *******/
 * {
   margin: 0;
