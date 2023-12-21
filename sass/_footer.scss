@@ -99,6 +99,8 @@ footer{
         }
         ul li{
             padding: 4px;
+            font-size: 15px;
+            font-weight: 100;
         }
         h3{
             text-align: center;
@@ -108,21 +110,29 @@ footer{
         }
 
         .ftr-contact{
-            width: 300px;
+            width: 200px;
             // background-color: green;
             display: block;
             
         }
         .ftr-cursos{
-            width: 300px;
+            width: 250px;
             // background-color: greenyellow;
             display: block;
         }
         .ftr-links{
-            width: 300px;
+            width: 250px;
             display: block;
             // background-color: yellow;
+        }
+
+        .ftr-sobre{
+            width: 300px;
+            p{
+                text-align: center;
+            }
         }
     }
 
 }
+

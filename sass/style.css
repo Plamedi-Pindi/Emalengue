@@ -237,6 +237,8 @@ footer .ftr-content ul {
 }
 footer .ftr-content ul li {
   padding: 4px;
+  font-size: 15px;
+  font-weight: 100;
 }
 footer .ftr-content h3 {
   text-align: center;
@@ -245,16 +247,22 @@ footer .ftr-content h3 {
   font-size: 19px;
 }
 footer .ftr-content .ftr-contact {
-  width: 300px;
+  width: 200px;
   display: block;
 }
 footer .ftr-content .ftr-cursos {
-  width: 300px;
+  width: 250px;
   display: block;
 }
 footer .ftr-content .ftr-links {
-  width: 300px;
+  width: 250px;
   display: block;
+}
+footer .ftr-content .ftr-sobre {
+  width: 300px;
+}
+footer .ftr-content .ftr-sobre p {
+  text-align: center;
 }
 
 main {
@@ -1514,6 +1522,19 @@ body {
     display: flex;
     flex-direction: row;
     align-items: start;
+    justify-content: space-between !important;
+    width: 86%;
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+  .footer-body h3 {
+    text-align: start !important;
+  }
+  .footer-body ul {
+    align-items: flex-start !important;
+  }
+  .footer-body .ftr-sobre p {
+    text-align: start !important;
   }
 }
 @media (min-width: 720px) {
@@ -1536,7 +1557,15 @@ body {
     flex-direction: row !important;
   }
   .footer-body .ftr-content {
-    width: 70%;
+    width: 86%;
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+  .footer-body h3 {
+    text-align: start !important;
+  }
+  .footer-body ul {
+    align-items: flex-start !important;
   }
   .footer-body ul li {
     font-size: 15px;
@@ -1871,15 +1900,7 @@ body {
     margin-right: 10px;
   }
 }
-@media (min-width: 1030px) {
-  .footer-body .ftr-content {
-    width: 60%;
-  }
-}
 @media (min-width: 1200px) {
-  .footer-body .ftr-content {
-    width: 60%;
-  }
   .menu-cursos .menu-curso-container ul {
     width: 198px !important;
   }
