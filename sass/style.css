@@ -267,6 +267,7 @@ footer .ftr-content .ftr-sobre p {
 
 main {
   flex: 1 0 auto;
+  margin-top: -6px !important;
 }
 
 /****** BANNER START ********/
@@ -1492,6 +1493,165 @@ main {
 @media (min-width: 1024px) {
   .proj_pub_banner {
     margin-top: 6rem !important;
+  }
+}
+.contact_banner {
+  margin-top: 4rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(../img/banner/ban.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.contact_banner h2 {
+  color: #eee;
+  font-size: 35px;
+  font-weight: 300;
+}
+.contact_banner .cont_line {
+  display: block;
+  background-color: #ddd;
+  height: 1px;
+  width: 80px;
+}
+.contact_banner ul {
+  display: inherit;
+  margin: 0;
+  margin-top: 10px;
+}
+.contact_banner ul li {
+  list-style: none;
+  margin-right: 10px;
+}
+.contact_banner ul li:first-child::after {
+  content: "/";
+  color: #eee;
+  margin-left: 10px;
+}
+.contact_banner ul li a {
+  text-decoration: none;
+  color: #eee;
+  font-weight: 300;
+}
+
+.contact_container {
+  width: 100%;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+  background-color: #eee;
+}
+.contact_container .cont_cont {
+  width: 100%;
+  margin: 0 auto;
+}
+.contact_container .cont_end {
+  border: #ddd solid 1px;
+  padding-top: 30px;
+  margin-top: 2rem;
+  background-color: #fff;
+  height: 470px;
+}
+.contact_container .cont_end h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+.contact_container .cont_end span {
+  color: rgb(237, 156, 5);
+  text-transform: uppercase;
+}
+.contact_container .cont_end p {
+  font-size: 15px;
+  color: #888;
+  margin-bottom: 2rem;
+}
+.contact_container .cont_end ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.contact_container .cont_end li {
+  display: flex;
+  margin-bottom: 1rem;
+  padding-bottom: 10px;
+  align-items: center;
+  border-bottom: #ddd 1px solid;
+}
+.contact_container .cont_end li .cont_icone {
+  border: 1px solid #333;
+  border-radius: 100%;
+  padding: 4px 8px;
+  font-size: 18px;
+}
+.contact_container .cont_end li div p {
+  margin-bottom: 0;
+}
+.contact_container .cont_end li p {
+  color: #666;
+  margin-left: 12px;
+  margin-bottom: 0;
+  font-weight: 400;
+}
+.contact_container .cont_end li:first-child {
+  border-top: #ddd 1px solid;
+  padding-top: 10px;
+}
+.contact_container .cont_end li:last-child {
+  border-bottom: none;
+}
+.contact_container .cont_end .cont_media {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.contact_container .cont_end .cont_media i {
+  font-size: 20px;
+  border: 1px solid;
+  padding: 5px 10px;
+  border-radius: 100%;
+  margin-right: 10px;
+}
+.contact_container .cont_end .cont_media a {
+  color: #222;
+  text-decoration: none;
+  transition: 0.5s;
+}
+.contact_container .cont_end .cont_media a:hover {
+  color: rgb(219, 144, 5);
+}
+
+.getInTouch {
+  background-color: #fff;
+  margin-top: 2rem;
+  padding-top: 1.8rem;
+  padding-bottom: 2rem;
+}
+.getInTouch h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.getInTouch span {
+  color: rgb(237, 156, 5);
+  text-transform: uppercase;
+}
+.getInTouch input {
+  margin-bottom: 20px;
+}
+.getInTouch input[type=submit] {
+  margin-top: 15px;
+}
+
+@media (min-width: 992px) {
+  .cont_cont {
+    width: 92% !important;
+  }
+  .contact_banner {
+    margin-top: 6.4rem;
   }
 }
 /****** GENERAL SITTINGS START *******/

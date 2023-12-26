@@ -26,7 +26,7 @@
     <!-- SWIPER CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-    <title>Home</title>
+    <title>Contatos</title>
 
 </head>
 
@@ -43,7 +43,7 @@
                     <a href="#"><i class="bi bi-whatsapp"></i></a>
                     <a href="#"> <i class="bi bi-instagram"></i></a>
                 </div>
-                <a href="dashboard/index.html" class="nav-login1"><i class="bi bi-person-circle"></i>Login</a>
+                <a href="#" class="nav-login1"><i class="bi bi-person-circle"></i>Login</a>
                 <a href="cadastro.html" class="nav-cadastrar1">Cadastrar-se</a>
             </div>
             <div class="container-fluid navbar-content ">
@@ -96,7 +96,7 @@
                                 </ul>
                             </div>
                         </li>
-                        <!-- freelancers -->
+                        <!-- CURSOs -->
                         <li class="nav-item freelance-menu">
                             <a class="nav-link" href="#">Freelancers</a>
                             <div class="freelance-menu-container">
@@ -127,13 +127,16 @@
                     </ul>
                     <!-- Mobile Ligin and Register -->
                     <div class="login-reg">
-                        <a href="dashboard/index.html" class="nav-login"> <i class="bi bi-person-circle"></i>Login</a>
+                        <a href="#" class="nav-login"> <i class="bi bi-person-circle"></i>Login</a>
                         <a href="cadastro.html" class="nav-cadastrar">Cadastrar-se</a>
                     </div>
                     <div class="midia">
                         <a href="#"> <i class="bi bi-facebook"></i></a>
                         <a href="#"><i class="bi bi-whatsapp"></i></a>
                         <a href="#"><i class="bi bi-instagram"></i></a>
+
+
+
                     </div>
                     <!-- Search From -->
                     <form class="d-flex search-bar" role="search">
@@ -148,62 +151,73 @@
         <!-- NAVBAR END-->
     </header>
     <!-- HEADER END -->
-
     <!-- MAIN START -->
     <main>
-        <div class="proj_pub_banner">
-            <h2>Publicar um Projeto</h2>
-            <span class="prob_pro_line"></span>
+        <div class="contact_banner">
+            <h2>Contacta-nos</h2>
+            <span class="cont_line"></span>
             <ul>
-                <li><a href="freelancer.html">Freelancer</a></li>
-                <li><a href="publicar_projeto.html">Publicar Projeto</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contatos</a></li>
             </ul>
         </div>
-        <div class="container project_pub_container">
+        <!-- CONTACT MAIN CONTAINER -->
+        <div class="contact_container">
+            <div class="row  cont_cont">
+                <div class="col-10 col-sm-9 col-md-4 col-xl-3 container-fluid cont_end">
+                    <h3> <span>Nossos</span> Endereços</h3>
+                    <p>Se tiver alguma questão específica, por favor não hesita em nos contactar.</p>
 
-            <h2>Publique um Projeto</h2>
+                    <ul>
+                        <li>
+                            <span class="cont_icone"><i class="bi bi-house-fill"></i></span>
+                            <p>Angola, Luanda, Mutamba-Kinaxixi</p>
+                        </li>
+                        <li>
+                            <span class="cont_icone"><i class="bi bi-telephone-fill"></i></span>
+                            <div>
+                                <p>+244 999 999 999</p>
+                                <p>222 222 222</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="cont_icone"><i class="bi bi-envelope-at-fill"></i></span>
+                            <p>info@gmail.com</p>
+                        </li>
+                        <li>
+                            <div class="cont_media">
+                                <a href="#"> <i class="bi bi-facebook"></i></a>
+                                <a href="#"><i class="bi bi-instagram"></i></a>
+                                <a href="#"> <i class="bi bi-whatsapp"></i></a>
+                            </div>
+                        </li>
 
-            <form action="">
-                <div class="row">
-                    <div class=" col-12 col-sm-10 col-md-6 container-fluid">
-                        <label for="">Escolha uma categoria <span>*</span></label>
-                        <select name="" id="" class="form-select" required>
-                            <option value="" selected>Selecione uma categoria</option>
-                            <option name="" id="">Categoria 1</option>
-                            <option name="" id="">Categoria 2</ooption>
-                            <option name="" id="">Categoria 3</optiion>
-                            <option name="" id="">Categoria 4</option>
-                            <option name="" id="">Categoria 5</option>
-                        </select>
-    
-                        <label for="">Dê um Nome para o trabalho <span>*</span></label>
-                        <input type="text" class="form-control" placeholder="Ex: Redator para blog de tecnologia" required>
-    
-                        <label for="">Descreva o trabalho a ser feito <span>*</span></label>
-                        <textarea name="" id="" cols="30" rows="5" required class="form-control"></textarea>
-                    </div>
-                    <div class="col-12 col-sm-10 col-md-6 container-fluid">
-                        <label for="">Quais habilidades são desejadas? <span>*</span></label>
-                        <select name="" id="" class="form-control" multiple>
-                            <option value="">Habilidade 1</option>
-                            <option value="">Habilidade 2</option>
-                            <option value="">Habilidade 3</option>
-                            <option value="">Habilidade 4</option>
-                            <option value="">Habilidade 5</option>
-                        </select>
-    
-                        <label for="" class="pub_prazo">Prazo<span>*</span></label>
-                        <input type="datetime-local" class="form-control" required>
-                    </div>
-
-                    <input type="submit" value="Publicar Projeto" class="btn btn-primary pub_button">
+                    </ul>
                 </div>
-            </form>
+                <div class="col-10 col-sm-9 col-md-7 col-xl-7 container-fluid getInTouch">
+                    <h3><span>Entra em </span>Contato</h3>
 
+                    <form action="">
+                        <div class="row">
+                            <div class="col-12 col-lg-6 container-fluid">
+                                <input type="text" placeholder="Seu nome" class="form-control">
+                                <input type="email" placeholder="Seu e-mail" class="form-control">
+                            </div>
+                            <div class="col-12 col-lg-6 container-fluid">
+                                <input type="text" placeholder="Assunto" class="form-control">
+                                <input type="tel" placeholder="Telefone" class="form-control">
+                            </div>
+                            <div class="col-lg-512 container-fluid">
+                                <textarea name="" id="" cols="30" rows="5" placeholder="messagem" class="form-control"></textarea>
+                            </div>
+                        </div>
+                        <input type="submit" name="" id="" value="Enviar" class="btn btn-warning">
+                    </form>
+                </div>
+            </div>
         </div>
     </main>
     <!-- MAIN END -->
-
     <!-- FOOTER START -->
     <footer>
         <div class="footer-body">
@@ -215,8 +229,8 @@
                 <a href="#" class="callingButton">Cadastra-se</a>
             </div>
             <div class="ftr-content">
-                 <!-- contacts -->
-                 <div class="ftr-sobre ">
+                <!-- contacts -->
+                <div class="ftr-sobre ">
                     <h3>Sobre</h3>
                     <ul>
                         <li>
@@ -226,10 +240,10 @@
                                 e fornecemos oportunidades de desenvolvimento com cursos proficionais.
                             </p>
                         </li>
-                        
+
                     </ul>
                 </div>
-                
+
                 <!-- footer menu -->
                 <div class="ftr-links">
                     <h3>Freelancers</h3>
@@ -266,15 +280,15 @@
                         <li><a href="#">Música</a></li>
                     </ul>
                 </div>
-                 <!-- contacts -->
-                 <div class="ftr-contact ">
+                <!-- contacts -->
+                <div class="ftr-contact ">
                     <h3>Contatos</h3>
                     <ul>
                         <li>+244 999999</li>
                         <li><a href="info@gmail.com">info@gmail.com</a></li>
                     </ul>
                 </div>
-                
+
             </div>
 
 
