@@ -1646,6 +1646,10 @@ main {
   margin-top: 15px;
 }
 
+.cont_map {
+  margin-top: 3rem;
+}
+
 @media (min-width: 992px) {
   .cont_cont {
     width: 92% !important;
