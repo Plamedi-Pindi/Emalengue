@@ -650,6 +650,45 @@ main {
 }
 
 /***********CONTRATAR FREELANCERS END *****************/
+/***********  COUNTER START *****************/
+.counter_section {
+  height: 250px;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/banner/banner\ 7.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.counter_section .container {
+  height: 100%;
+}
+.counter_section .row {
+  height: 100% !important;
+}
+.counter_section .counter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+  margin-bottom: 5px;
+  margin-top: 5px;
+  border-radius: 10px;
+}
+.counter_section h3 {
+  font-size: 35px;
+}
+.counter_section h3 span {
+  margin-left: 10px;
+}
+.counter_section .cntr_info {
+  font-size: 20px;
+}
+
+/***********  COUNTER END *****************/
 /***********NOSSOS PARCEIROS START *****************/
 #parceiros {
   width: 100%;
