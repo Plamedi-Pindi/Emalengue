@@ -1,18 +1,17 @@
-
-/***** GENERAL CONFIG START *****/ 
-*{
+/***** GENERAL CONFIG START *****/
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
 
-body{
+body {
     display: grid;
-    grid-template-columns: 0.6fr 1fr 1fr 1fr;    
+    grid-template-columns: 0.6fr 1fr 1fr 1fr;
 }
 
-header{
+header {
     background-color: rgb(11, 11, 49);
     // height: 48px;
     height: 7vh;
@@ -22,7 +21,7 @@ header{
     // grid-row:  1/ span 2;
 }
 
-#sidebar{
+#sidebar {
     background-color: rgb(2, 2, 92);
     // height: 00px;
     height: 93vh;
@@ -32,7 +31,7 @@ header{
     grid-row: 2 / span 3;
 }
 
-main{
+main {
     background-color: #eee;
     height: 89vh;
     grid-column: 2 / span 3;
@@ -42,7 +41,7 @@ main{
     overflow-y: auto;
 }
 
-footer{
+footer {
     background-color: #ddd;
     height: 4vh;
     grid-column: 2 / span 3;
@@ -50,47 +49,56 @@ footer{
 
     text-align: center;
     color: #888;
-    
+
 }
 
 /***** GENERAL CONFIG END *****/
 
 /***** IMPORTING FILE START *****/
-    @import './header';
-    @import './sidebar';
-    @import './frRegister';
-    @import './newProject';
-    
-    
+@import './header';
+@import './sidebar';
+@import './frRegister';
+@import './newProject';
+@import './freelancer';
+
+
 /***** IMPORTING FILE END *****/
 
-@media(min-width:500px){
-    body{
+
+
+/* MEDIA CONFIG START ===========================================*/
+
+@media(min-width:500px) {
+    body {
         display: grid;
-        grid-template-columns: 0.5fr 1fr 1fr 1fr ;    
-    }
-    
-}
-@media(min-width:720px){
-    body{
-        display: grid;
-        grid-template-columns: 0.4fr 1fr 1fr 1fr ;    
-    }
-    
-}
-@media(min-width:992px){
-    body{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr !important;    
+        grid-template-columns: 0.5fr 1fr 1fr 1fr;
     }
 
-    #sdb-slide{
+}
+
+@media(min-width:720px) {
+    body {
+        display: grid;
+        grid-template-columns: 0.4fr 1fr 1fr 1fr;
+    }
+
+}
+
+@media(min-width:992px) {
+    body {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr !important;
+    }
+
+    #sdb-slide {
         display: none;
     }
-    .sb-content{
+
+    .sb-content {
         display: inline !important;
     }
-    .sd-title{
+
+    .sd-title {
         display: block;
         color: #ddd;
         font-size: 14px;
@@ -99,26 +107,30 @@ footer{
         margin-bottom: 20px;
     }
 
-    #sidebar{
-        .sb-content{
+    #sidebar {
+        .sb-content {
             margin-left: 10px !important;
         }
     }
-    ul:first-child{
+
+    ul:first-child {
         border-bottom: none !important;
     }
-    main .container{
+
+    main .container {
         width: 90%;
     }
-    #fr_rg_photo_input{
+
+    #fr_rg_photo_input {
         width: 45%;
     }
 
 }
-@media(min-width:1200px){
-    body{
+
+@media(min-width:1200px) {
+    body {
         display: grid;
-        grid-template-columns: 0.7fr 1fr 1fr 1fr !important;    
+        grid-template-columns: 0.7fr 1fr 1fr 1fr !important;
     }
-    
+
 }

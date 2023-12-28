@@ -178,7 +178,64 @@ footer {
   margin-top: 2rem;
 }
 
+/* MAIN CONTAINER GENERAL CONFIG START ===========================================*/
+.fr_container {
+  background-color: #fff;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 4px;
+  box-shadow: 1px 2px 5px #ddd;
+  padding-bottom: 1.5rem;
+}
+.fr_container table .fr_name {
+  font-size: 15px;
+  margin: 0;
+  color: #222;
+  font-family: "Roboto", sans-serif;
+}
+.fr_container table .fr_profissao {
+  font-size: 13px;
+  color: #888;
+}
+.fr_container table .fr_img {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+}
+.fr_container table .fr_skills {
+  font-size: 13px;
+  color: #888;
+}
+.fr_container table .fr_email {
+  font-size: 14px;
+  color: #888;
+}
+.fr_container table .fr_id {
+  font-size: 16px;
+  color: #888;
+  display: block;
+}
+.fr_container table .fr_edit {
+  background-color: rgba(2, 119, 228, 0.322);
+  color: rgb(0, 60, 255);
+}
+.fr_container table .fr_delete {
+  background-color: rgba(255, 0, 0, 0.233);
+  color: red;
+}
+.fr_container table .fr_view {
+  background-color: rgba(0, 128, 0, 0.301);
+  color: green;
+}
+.fr_container table .fr_edit,
+.fr_container table .fr_delete,
+.fr_container table .fr_view {
+  padding: 4px;
+  border-radius: 4px;
+}
+
 /***** IMPORTING FILE END *****/
+/* MEDIA CONFIG START ===========================================*/
 @media (min-width: 500px) {
   body {
     display: grid;

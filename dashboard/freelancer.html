@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- BOOTSTRAP v5.3 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- APP CSS -->
+    <link rel="stylesheet" href="sass/style.css">
+    <title>Freelancers</title>
+</head>
+
+<body id="t">
+    <!-- HEADER START -->
+    <header>
+        <div class="header-container ">
+            <div class="logo">
+                <a href="../index.html">eMALENGUE</a>
+            </div>
+            <div class="hd-container">
+                <div id="user-menu">
+                    <img src="img/user.jpg" alt="" id="hd-user-img"></img>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- HEADER END -->
+
+    <!-- SIDEBAR START -->
+    <div id="sidebar">
+        <nav>
+            <ul>
+                <li id="sdb-slide"><i class="bi bi-arrow-right" id="slide-icon"></i></li>
+            </ul>
+
+            <h3 class="sd-title">Painel de Controlo</h3>
+            <ul>
+                <li>
+                    <a href="index.html"><i class="bi bi-house-fill"></i>
+                        <span class="sb-content">Home</span>
+                    </a>
+                </li>
+            </ul>
+
+            <h3 class="sd-title">Freelancer</h3>
+            <ul>
+                <li>
+                    <a href="freelancer.html"><i class="bi bi-person-fill"></i>
+                        <span class="sb-content">Freelancers</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="freelance-register.html"><i class="bi bi-person-fill-add"></i>
+                        <span class="sb-content">Cadastrar Freelancer</span>
+                    </a>
+                </li>
+            </ul>
+
+            <h3 class="sd-title">Curso</h3>
+            <ul>
+                <li>
+                    <a href="#"><i class="bi bi-grid-fill"></i>
+                        <span class="sb-content">Cursos</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#"><i class="bi bi-file-earmark-plus-fill"></i>
+                        <span class="sb-content">Novo Curso</span>
+                    </a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="#"><i class="bi bi-building-fill"></i>
+                        <span class="sb-content">Projetos</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="new-project.html"><i class="bi bi-building-fill-add"></i></i>
+                        <span class="sb-content">Publicar Projeto</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <!-- SIDEBAR END -->
+
+    <!-- MAIN START -->
+    <main>
+        <div class="container">
+            <div class="fr_container">
+                <table class="table table-hover">
+                    <thead class="table-light">
+                        <tr>
+                            <th scope="col" >ID</th>
+                            <th scope="col">Imagem</th>
+                            <th scope="col">Nome</th>
+                            <th scope="col">Habilidades</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="fr_rows">
+                            <td><span class="fr_id">1</span></td>
+                            <td>
+                                <img src="img/user.jpg" alt="Imagem do Freelancer" class="fr_img">
+                            </td>
+                            <td>
+                                <h5 class="fr_name">Plamedi Pindi</h5>
+                                <span class="fr_profissao">Engenheiro de Software</span>
+                            </td>
+                            <td><span class="fr_skills">HTML5, CSS3, JS, NodeJs...</span></td>
+                            <td><span class="fr_email text-primary">info43@gmail.com</span></td>
+                            <td>
+                                <span class="fr_edit" title="Editar"><i class="bi bi-pencil-square"></i></span>
+                                <span class="fr_delete" title="Deletar"><i class="bi bi-trash3"></i></i></span>
+                                <span class="fr_view" title="Mais detalhes"> <i class="bi bi-eye"></i></span>
+                            </td>
+                        </tr>
+                        <tr class="fr_rows">
+                            <td><span class="fr_id">2</span></td>
+                            <td>
+                                <img src="img/user.jpg" alt="Imagem do Freelancer" class="fr_img">
+                            </td>
+                            <td>
+                                <h5 class="fr_name">Plamedi Pindi</h5>
+                                <span class="fr_profissao">Engenheiro de Software</span>
+                            </td>
+                            <td><span class="fr_skills">HTML5, CSS3, JS, NodeJs...</span></td>
+                            <td><span class="fr_email text-primary">info43@gmail.com</span></td>
+                            <td>
+                                <span class="fr_edit" title="Editar"><i class="bi bi-pencil-square"></i></span>
+                                <span class="fr_delete" title="Deletar"><i class="bi bi-trash3"></i></i></span>
+                                <span class="fr_view" title="Mais detalhes"> <i class="bi bi-eye"></i></span>
+                            </td>
+                        </tr>
+                        <tr class="fr_rows">
+                            <td><span class="fr_id">3</span></td>
+                            <td>
+                                <img src="img/user.jpg" alt="Imagem do Freelancer" class="fr_img">
+                            </td>
+                            <td>
+                                <h5 class="fr_name">Plamedi Pindi</h5>
+                                <span class="fr_profissao">Engenheiro de Software</span>
+                            </td>
+                            <td><span class="fr_skills">HTML5, CSS3, JS, NodeJs...</span></td>
+                            <td><span class="fr_email text-primary">info43@gmail.com</span></td>
+                            <td>
+                                <span class="fr_edit" title="Editar"><i class="bi bi-pencil-square"></i></span>
+                                <span class="fr_delete" title="Deletar"><i class="bi bi-trash3"></i></i></span>
+                                <span class="fr_view" title="Mais detalhes"> <i class="bi bi-eye"></i></span>
+                            </td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+                </div>
+        </div>
+    </main>
+    <!-- MAIN END -->
+    <footer>
+        <p>copyright &copy; 2023</p>
+    </footer>
+
+    <!-- APP JS -->
+    <script src="js/app.js"></script>
+</body>
+
+</html>
