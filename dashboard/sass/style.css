@@ -226,6 +226,7 @@ footer {
 .fr_container table .fr_view {
   background-color: rgba(0, 128, 0, 0.301);
   color: green;
+  border: none;
 }
 .fr_container table .fr_edit,
 .fr_container table .fr_delete,
@@ -234,6 +235,97 @@ footer {
   border-radius: 4px;
 }
 
+.fr_mdl_data1 {
+  margin-bottom: 2rem;
+}
+.fr_mdl_data1 img {
+  width: 100%;
+  border-radius: 5px;
+}
+.fr_mdl_data1 h3 {
+  font-size: 16px;
+  color: #444;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+.fr_mdl_data1 span {
+  color: #888;
+  font-size: 14px;
+}
+.fr_mdl_data1 ul {
+  margin: 1rem 0 0 0;
+  list-style: none;
+  padding: 0;
+}
+.fr_mdl_data1 ul li {
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+  font-size: 14px;
+  color: #888;
+}
+.fr_mdl_data1 ul i {
+  margin-right: 10px;
+}
+
+.fr_mdl_data2 {
+  margin-bottom: 2rem;
+}
+.fr_mdl_data2 h3 {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  border-left: 2px solid rgb(236, 154, 2);
+}
+.fr_mdl_data2 ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.fr_mdl_data2 ul li {
+  color: #888;
+  font-size: 14px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.fr_mdl_data3 {
+  margin-bottom: 2rem;
+}
+.fr_mdl_data3 h3 {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  border-left: 2px solid rgb(236, 154, 2);
+}
+.fr_mdl_data3 div {
+  text-align: justify;
+  font-size: 14px;
+  color: #888;
+}
+.fr_mdl_data3 .ft_mdl_dwl i {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+/** MEDIA ======================================= */
+@media (min-width: 320px) {
+  .fr_container {
+    overflow-x: auto;
+  }
+  .fr_container table {
+    min-width: 820px;
+  }
+}
+@media (min-width: 1200px) {
+  .fr_container {
+    overflow-x: unset;
+  }
+  .fr_container table {
+    min-width: 0px;
+  }
+}
 /***** IMPORTING FILE END *****/
 /* MEDIA CONFIG START ===========================================*/
 @media (min-width: 500px) {
